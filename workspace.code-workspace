@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "..\\..\\..\\..\\..\\Downloads\\bootstrap-5.1.3-dist"
+		},
+		{
+			"path": "..\\..\\..\\..\\..\\Downloads\\bootstrap-5.1.3-dist\\css"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "ID_ASSG2"
+	}
+}

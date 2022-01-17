@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Noto Serif", serif;
+  font-family: "Merriweather", serif;
   scroll-behavior: smooth;
   height: 100%;
 }
@@ -15,28 +15,52 @@ body {
   width: 100%;
   background-size: cover;
   background-position: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+    url(street.gif);
+}
+.main-header img {
+  height: 70px;
+  width: 95px;
+  position: relative;
+  top: -10%;
+  left: 47%;
 }
 
 .menu {
   width: 100%;
   height: 10vh;
+  background-color: black;
+}
+.menu i {
+  color: aliceblue;
 }
 
 .menu ul {
-  text-align: center;
+  text-align: right;
   list-style-type: none;
-  margin-top: 0px;
-  color: black;
+  margin-right: 50px;
 }
 
 .menu ul li {
   display: inline-block;
   text-decoration: none;
   margin-top: 15px;
-  color: black;
   width: 10%;
+  color: aliceblue;
 }
 
+.menu ul li a {
+  text-decoration: none;
+  color: rgb(243, 237, 237);
+}
+
+.menu ul li a:hover {
+  text-decoration: none;
+  padding: 5px 10px;
+  background-color: rgb(71, 57, 66);
+  color: black;
+  transition: 0.45s ease;
+}
 .text-box {
   width: 90%;
   position: absolute;
@@ -47,25 +71,31 @@ body {
 }
 
 .text-box h1 {
-  font-family: "Montagu Slab", serif;
+  font-family: "Special Elite", cursive;
   font-size: 70px;
-  margin: 10px, 0, 0;
+  margin: 10px;
   color: rgb(255, 255, 255);
   text-align: center;
-  height: 4%;
+  position: relative;
+  top: 35%;
 }
-
 .text-box h2 {
+  font-family: "Merriweather", serif;
+  color: rgb(241, 216, 229);
   text-align: center;
-  position: absolute;
-  top: 1%;
-  left: 25%;
-  color: rgba(235, 232, 230, 0.9);
+  position: relative;
+  top: -88%;
+}
+.text-box h3 {
+  font-family: "Merriweather", sans;
+  color: white;
 }
 
 .section2 {
   height: auto;
   color: aliceblue;
+  display: flex;
+  margin: 10px;
 }
 
 .container h1 {
@@ -74,20 +104,22 @@ body {
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
+  width: 300px;
   margin: auto;
+  margin-bottom: 10px;
   text-align: center;
   font-family: arial;
+  color: black;
 }
 
 .card img {
-  height: 372px;
+  height: 382px;
   width: 298px;
   object-fit: cover;
 }
 
 .price {
-  color: grey;
+  color: rgb(220, 170, 195);
   font-size: 22px;
 }
 
@@ -99,7 +131,7 @@ body {
   background-color: #000;
   text-align: center;
   cursor: pointer;
-  width: 100%;
+  width: 80%;
   font-size: 18px;
 }
 
