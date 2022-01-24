@@ -1,6 +1,7 @@
 # ID_Assignment2
 
 - Gwendolyn(s10223182) and Sumayyah(s10223863)
+- Link to the website https://smyyhzai.github.io/ID_Assignment2_Team7/
 
 # black tag - an e-commerce shopping website
 
