@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Merriweather", serif;
+  font-family: "Outfit", sans-serif;
   scroll-behavior: smooth;
   height: 100%;
 }
@@ -45,7 +45,7 @@ body {
   display: inline-block;
   text-decoration: none;
   margin-top: 15px;
-  width: 10%;
+  width: 5%;
   color: aliceblue;
 }
 
@@ -57,7 +57,7 @@ body {
 .menu ul li a:hover {
   text-decoration: none;
   padding: 5px 10px;
-  background-color: rgb(71, 57, 66);
+  background-color: rgb(241, 216, 229);
   color: black;
   transition: 0.45s ease;
 }
@@ -80,22 +80,42 @@ body {
   top: 35%;
 }
 .text-box h2 {
-  font-family: "Merriweather", serif;
+  font-family: "Outfit", sans-serif;
   color: rgb(241, 216, 229);
   text-align: center;
   position: relative;
   top: -88%;
 }
 .text-box h3 {
-  font-family: "Merriweather", sans;
-  color: white;
+  font-family: "Outfit", sans-serif;
+  color: rgb(241, 216, 229);
+  position: relative;
+  text-align: center;
+  top: -140%;
+}
+
+.expbtn {
+  height: 30px;
+  width: 100px;
+  border-color: black;
+  position: relative;
+  top: 60%;
+  left: 37%;
 }
 
 .section2 {
   height: auto;
   color: aliceblue;
-  display: flex;
   margin: 10px;
+}
+
+.mini-nav {
+  width: 100%;
+}
+
+.mini-nav ul li {
+  display: inline-block;
+  margin: 30px;
 }
 
 .container h1 {
@@ -106,7 +126,7 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   width: 300px;
   margin: auto;
-  margin-bottom: 10px;
+  margin-bottom: 50px;
   text-align: center;
   font-family: arial;
   color: black;
@@ -137,4 +157,20 @@ body {
 
 .card button:hover {
   opacity: 0.7;
+}
+
+.footer {
+  margin-top: 0px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  border-radius: 0px;
+  text-align: center;
+  font-size: 13px;
+  bottom: auto;
+  color: white;
+  height: auto;
+}
+.footer h4 {
+  font-size: 15px;
 }
