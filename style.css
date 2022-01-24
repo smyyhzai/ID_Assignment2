@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Outfit", sans-serif;
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  background-color: black;
+}
+
+.main-header {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+    url(street.gif);
+}
+.main-header img {
+  height: 70px;
+  width: 95px;
+  position: relative;
+  top: -10%;
+  left: 47%;
+}
+
+.menu {
+  width: 100%;
+  height: 10vh;
+  background-color: black;
+}
+.menu i {
+  color: aliceblue;
+}
+
+.menu ul {
+  text-align: right;
+  list-style-type: none;
+  margin-right: 50px;
+}
+
+.menu ul li {
+  display: inline-block;
+  text-decoration: none;
+  margin-top: 15px;
+  width: 5%;
+  color: aliceblue;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: rgb(243, 237, 237);
+}
+
+.menu ul li a:hover {
+  text-decoration: none;
+  padding: 5px 10px;
+  background-color: rgb(241, 216, 229);
+  color: black;
+  transition: 0.45s ease;
+}
+.text-box {
+  width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 45%;
+}
+
+.text-box h1 {
+  font-family: "Special Elite", cursive;
+  font-size: 70px;
+  margin: 10px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  position: relative;
+  top: 35%;
+}
+.text-box h2 {
+  font-family: "Outfit", sans-serif;
+  color: rgb(241, 216, 229);
+  text-align: center;
+  position: relative;
+  top: -88%;
+}
+.text-box h3 {
+  font-family: "Outfit", sans-serif;
+  color: rgb(241, 216, 229);
+  position: relative;
+  text-align: center;
+  top: -140%;
+}
+
+.expbtn {
+  height: 30px;
+  width: 100px;
+  border-color: black;
+  position: relative;
+  top: 60%;
+  left: 37%;
+}
+
+.section2 {
+  height: auto;
+  color: aliceblue;
+  margin: 10px;
+}
+
+.mini-nav {
+  width: 100%;
+}
+
+.mini-nav ul li {
+  display: inline-block;
+  margin: 30px;
+}
+
+.container h1 {
+  text-align: center;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 300px;
+  margin: auto;
+  margin-bottom: 50px;
+  text-align: center;
+  font-family: arial;
+  color: black;
+}
+
+.card img {
+  height: 382px;
+  width: 298px;
+  object-fit: cover;
+}
+
+.price {
+  color: rgb(220, 170, 195);
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 80%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.footer {
+  margin-top: 0px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  border-radius: 0px;
+  text-align: center;
+  font-size: 13px;
+  bottom: auto;
+  color: white;
+  height: auto;
+}
+.footer h4 {
+  font-size: 15px;
+}
