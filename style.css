@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Outfit", sans-serif;
+  font-family: "Special Elite", cursive;
   scroll-behavior: smooth;
   height: 100%;
 }
@@ -45,12 +45,11 @@ body {
   display: inline-block;
   text-decoration: none;
   margin-top: 15px;
-  width: 5%;
+  width: 8%;
   color: aliceblue;
 }
 
 .menu ul li a {
-  text-decoration: none;
   color: rgb(243, 237, 237);
 }
 
@@ -58,9 +57,14 @@ body {
   text-decoration: none;
   padding: 5px 10px;
   background-color: rgb(241, 216, 229);
-  color: black;
-  transition: 0.45s ease;
+  transition: 0.45s ease-in-out;
 }
+
+#navbar {
+  position: fixed;
+  z-index: 1;
+}
+
 .text-box {
   width: 90%;
   position: absolute;
@@ -118,10 +122,41 @@ body {
   margin: 30px;
 }
 
-.container h1 {
+.category {
+  margin: 30px;
+  margin-left: 30%;
+  width: 600px;
+  height: 300px;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: black;
+  padding: 0px;
+  justify-content: center;
+}
+
+.category img {
+  object-fit: cover;
+  border-radius: 10px;
+  width: 600px;
+  height: 300px;
+}
+
+.layer {
+  width: 600px;
+  height: 300px;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.layer h4 {
+  color: white;
   text-align: center;
 }
 
+.section1 {
+  text-align: center;
+  color: wheat;
+}
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   width: 300px;
@@ -138,9 +173,42 @@ body {
   object-fit: cover;
 }
 
+.card h1 {
+  font-size: 25px;
+}
+
 .price {
   color: rgb(220, 170, 195);
   font-size: 22px;
+}
+
+span {
+  cursor: pointer;
+}
+span .number {
+  margin: 100px;
+}
+.minus,
+.plus {
+  width: 20px;
+  height: 20px;
+  background: #f2f2f2;
+  border-radius: 4px;
+  padding: 8px 5px 8px 5px;
+  border: 1px solid #ddd;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+}
+input {
+  height: 34px;
+  width: 100px;
+  text-align: center;
+  font-size: 26px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .card button {
