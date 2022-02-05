@@ -19,7 +19,7 @@
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/c75c699b1a.js" crossorigin="anonymous"></script>
 
-    <title>Assignment Website</title>
+    <title>Products</title>
 
 </head>
 
@@ -39,25 +39,23 @@
         </section>
 
     </header>
-
+    
     <div class="section2">
         <div class="container">
             <h1>Our Top products</h1>
-            <nav class="mini-nav">
-                <ul>
-                    <li>More products |</li>
-                    <li>Sweatshirts</li>
-                    <li>Top</li>
-                    <li>Bottoms</li>
+            <nav class="mini-nav" id="myBtnContainer">
+                <button class="btn active" onclick="filterSelection('all')"> Show all  |</button>
+                <button class="btn" onclick="filterSelection('sweatshirts')"> Sweatshirts</button>
+                <button class="btn" onclick="filterSelection('tops')"> Tops</button>
+                <button class="btn" onclick="filterSelection('bottoms')"> Bottoms</button>
             </nav>
+
         </div>
-        <section class="section1">
-            <h1>Sweatshirts</h1>
-        </section>
+        
         <div class="row">
-            <div class="card">
+            <div class="card sweatshirts">
                 <img src="images/sw1.jpg">
-                <h1>Basic Grey</h1>
+                <h1>Basic Grey Sweat</h1>
                 <p class="price">$10.00</p>
                 <div class="number">
                     <span class="minus">-</span>
@@ -66,14 +64,14 @@
                 </div>
                 <p><button>Add to Cart</button></p>
             </div>
-            <div class="card">
+            <div class="card sweatshirts">
                 <img src="images/sw2.jpg">
-                <h1>Soft Grey</h1>
+                <h1>Soft Grey Sweat</h1>
                 <p class="price">$10.00</p>
                 <p>Some text about the jeans..</p>
                 <p><button>Add to Cart</button></p>
             </div>
-            <div class="card">
+            <div class="card sweatshirts">
                 <img src="images/sw3.jpg">
                 <h1>Turquoise Green</h1>
                 <p class="price">$15.00</p>
@@ -82,47 +80,45 @@
             </div>
         </div>
         <div class="row">
-            <div class="card">
+            <div class="card sweatshirts">
                 <img src="images/sw4.jpg">
-                <h1>Hard Grey</h1>
+                <h1>Hard Grey Sweat</h1>
                 <p class="price">$15.00</p>
                 <p>Some text about the jeans..</p>
                 <p><button>Add to Cart</button></p>
             </div>
-            <div class="card">
+            <div class="card sweatshirts">
                 <img src="images/sw5.jpg">
-                <h1>Pastel Green</h1>
+                <h1>Pastel Green Sweat</h1>
                 <p class="price">$15.00</p>
                 <p>Some text about the jeans..</p>
                 <p><button>Add to Cart</button></p>
             </div>
-            <div class="card">
+            <div class="card sweatshirts">
                 <img src="images/sw6.jpg">
-                <h1>Chocolate Brown</h1>
+                <h1>Chocolate Brown Sweat</h1>
                 <p class="price">$11.00</p>
                 <p>Some text about the jeans..</p>
                 <p><button>Add to Cart</button></p>
             </div>
         </div>
-        <section class="section1">
-            <h1>Tops</h1>
-        </section>
+
         <div class="row">
-            <div class="card">
+            <div class="card tops">
                 <img src="images/1.jpg">
                 <h1>Super City Tee</h1>
                 <p class="price">$10.00</p>
                 <p>Some text about the jeans..</p>
                 <p><button>Add to Cart</button></p>
             </div>
-            <div class="card">
+            <div class="card tops">
                 <img src="images/2.jpg">
                 <h1>Cloud Tee</h1>
                 <p class="price">$10.00</p>
                 <p>Some text about the jeans..</p>
                 <p><button>Add to Cart</button></p>
             </div>
-            <div class="card">
+            <div class="card tops">
                 <img src="images/3.jpg">
                 <h1>Butterfly Tee</h1>
                 <p class="price">$10.00</p>
@@ -131,21 +127,21 @@
             </div>
         </div>
         <div class="row">
-            <div class="card">
+            <div class="card tops">
                 <img src="images/4.jpg">
                 <h1>23 tee</h1>
                 <p class="price">$10.00</p>
                 <p>Some text about the jeans..</p>
                 <p><button>Add to Cart</button></p>
             </div>
-            <div class="card">
+            <div class="card tops">
                 <img src="images/5.jpg">
                 <h1>Skeleton Tee</h1>
                 <p class="price">$10.00</p>
                 <p>Some text about the jeans..</p>
                 <p><button>Add to Cart</button></p>
             </div>
-            <div class="card">
+            <div class="card tops">
                 <img src="images/6.jpg">
                 <h1>Off Mind Tee</h1>
                 <p class="price">$10.00</p>
@@ -155,21 +151,21 @@
         </div>
 
         <div class="row">
-            <div class="card">
+            <div class="card tops">
                 <img src="images/13.jpg">
                 <h1>Space Tee</h1>
                 <p class="price">$10.00</p>
                 <p>Some text about the jeans..</p>
                 <p><button>Add to Cart</button></p>
             </div>
-            <div class="card">
+            <div class="card tops">
                 <img src="images/8.jpg">
                 <h1>Future Robots Tee</h1>
                 <p class="price">$10.00</p>
                 <p>Some text about the jeans..</p>
                 <p><button>Add to Cart</button></p>
             </div>
-            <div class="card">
+            <div class="card tops">
                 <img src="images/9.jpg">
                 <h1>Natural Tee</h1>
                 <p class="price">$10.00</p>
@@ -178,21 +174,21 @@
             </div>
         </div>
         <div class="row">
-            <div class="card">
+            <div class="card tops">
                 <img src="images/10.jpg">
                 <h1>Lost Mind Tee</h1>
                 <p class="price">$10.00</p>
                 <p>Some text about the jeans..</p>
                 <p><button>Add to Cart</button></p>
             </div>
-            <div class="card">
+            <div class="card tops">
                 <img src="images/11.jpg">
                 <h1>Bring Tee</h1>
                 <p class="price">$10.00</p>
                 <p>Some text about the jeans..</p>
                 <p><button>Add to Cart</button></p>
             </div>
-            <div class="card">
+            <div class="card tops">
                 <img src="images/12.jpg">
                 <h1>Heart Tee</h1>
                 <p class="price">$10.00</p>
@@ -200,25 +196,23 @@
                 <p><button>Add to Cart</button></p>
             </div>
         </div>
-        <section class="section1">
-            <h1>Bottoms</h1>
-        </section>
+
         <div class="row">
-            <div class="card">
+            <div class="card bottoms">
                 <img src="images/b1.jpg">
                 <h1>Space Grey Pants</h1>
                 <p class="price">$12.00</p>
                 <p>Some text about the jeans..</p>
                 <p><button>Add to Cart</button></p>
             </div>
-            <div class="card">
+            <div class="card bottoms">
                 <img src="images/b2.jpg">
                 <h1>Beige Shorts</h1>
                 <p class="price">$7.00</p>
                 <p>Some text about the jeans..</p>
                 <p><button>Add to Cart</button></p>
             </div>
-            <div class="card">
+            <div class="card bottoms">
                 <img src="images/b5.jpg">
                 <h1>North Shorts</h1>
                 <p class="price">$7.50</p>
@@ -227,21 +221,21 @@
             </div>
         </div>
         <div class="row">
-            <div class="card">
+            <div class="card bottoms">
                 <img src="images/b3.jpg">
                 <h1>Checkered Pants</h1>
                 <p class="price">$11.00</p>
                 <p>Some text about the jeans..</p>
                 <p><button>Add to Cart</button></p>
             </div>
-            <div class="card">
+            <div class="card bottoms">
                 <img src="images/b4.jpg">
                 <h1>Basic Black Pants</h1>
                 <p class="price">$11.00</p>
                 <p>Some text about the jeans..</p>
                 <p><button>Add to Cart</button></p>
             </div>
-            <div class="card">
+            <div class="card bottoms">
                 <img src="images/b6.jpg">
                 <h1>L.A Shorts</h1>
                 <p class="price">$6.90</p>
@@ -250,21 +244,21 @@
             </div>
         </div>
         <div class="row">
-            <div class="card">
+            <div class="card bottoms">
                 <img src="images/b7.jpg">
                 <h1>Original Shorts</h1>
                 <p class="price">$6.50</p>
                 <p>Some text about the jeans..</p>
                 <p><button>Add to Cart</button></p>
             </div>
-            <div class="card">
+            <div class="card bottoms">
                 <img src="images/b8.jpg">
                 <h1>Rainbow Shorts</h1>
                 <p class="price">$6.50</p>
                 <p>Some text about the jeans..</p>
                 <p><button>Add to Cart</button></p>
             </div>
-            <div class="card">
+            <div class="card bottoms">
                 <img src="images/b9.jpg">
                 <h1>Real Shorts</h1>
                 <p class="price">$6.50</p>
@@ -274,21 +268,21 @@
         </div>
 
         <div class="row">
-            <div class="card">
+            <div class="card bottoms">
                 <img src="images/b10.jpg">
                 <h1>Smiley Shorts</h1>
                 <p class="price">$6.50</p>
                 <p>Some text about the jeans..</p>
                 <p><button>Add to Cart</button></p>
             </div>
-            <div class="card">
+            <div class="card bottoms">
                 <img src="images/b11.jpg">
                 <h1>Butterfly Shorts</h1>
                 <p class="price">$6.50</p>
                 <p>Some text about the jeans..</p>
                 <p><button>Add to Cart</button></p>
             </div>
-            <div class="card">
+            <div class="card bottoms">
                 <img src="images/b12.jpg">
                 <h1>Dino Shorts</h1>
                 <p class="price">$6.50</p>
