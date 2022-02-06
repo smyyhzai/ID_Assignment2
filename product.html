@@ -9,6 +9,22 @@
 
     <script type="text/javascript" src="script.js"></script>
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <style>
+        .badge-notify {
+            background: red;
+            position: relative;
+            top: -20px;
+            right: 10px;
+        }
+
+        .my-cart-icon-affix {
+            position: fixed;
+            z-index: 999;
+        }
+    </style>
+
+
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
         rel="stylesheet">
@@ -39,30 +55,33 @@
         </section>
 
     </header>
-    
+
     <div class="section2">
         <div class="container">
             <h1>Our Top products</h1>
             <nav class="mini-nav" id="myBtnContainer">
-                <button class="btn active" onclick="filterSelection('all')"> Show all  |</button>
+                <button class="btn active" onclick="filterSelection('all')"> Show all |</button>
                 <button class="btn" onclick="filterSelection('sweatshirts')"> Sweatshirts</button>
                 <button class="btn" onclick="filterSelection('tops')"> Tops</button>
                 <button class="btn" onclick="filterSelection('bottoms')"> Bottoms</button>
             </nav>
 
         </div>
-        
+
+        <div style="float: right; cursor: pointer;">
+            <span class="glyphicon glyphicon-shopping-cart my-cart-icon"><span
+                    class="badge badge-notify my-cart-badge"></span></span>
+        </div>
+
         <div class="row">
             <div class="card sweatshirts">
                 <img src="images/sw1.jpg">
                 <h1>Basic Grey Sweat</h1>
-                <p class="price">$10.00</p>
-                <div class="number">
-                    <span class="minus">-</span>
-                    <input type="text" value="1" />
-                    <span class="plus">+</span>
-                </div>
-                <p><button>Add to Cart</button></p>
+                <br>
+                Basic Grey Sweat - <strong>$10</strong>
+                <br>
+                <button class="btn btn-danger my-cart-btn" data-id="1" data-name="product 1" data-summary="summary 1"
+                    data-price="10" data-quantity="1" data-image="images/img_1.png">Add to Cart</button>
             </div>
             <div class="card sweatshirts">
                 <img src="images/sw2.jpg">
@@ -298,6 +317,11 @@
         <h4>All Rights Reserved©</h4>
         <p>Made by gwen & sumo <br>Interactive Development Assignment 2, January 2022.</p>
     </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script type='text/javascript' src="js/jquery.mycart/jquery.mycart.js"></script>
+    <script type="text/javascript" src="script.js"></script>
 
 </body>
 
