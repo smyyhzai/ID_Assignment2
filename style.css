@@ -1,7 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Special Elite", cursive;
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
   scroll-behavior: smooth;
   height: 100%;
 }
@@ -15,7 +16,7 @@ body {
   width: 100%;
   background-size: cover;
   background-position: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
     url(street.gif);
 }
 .main-header img {
@@ -86,6 +87,7 @@ body {
 }
 .text-box h2 {
   font-family: "Outfit", sans-serif;
+  font-weight: 500;
   color: rgb(241, 216, 229);
   text-align: center;
   position: relative;
@@ -127,7 +129,7 @@ body {
   margin: 30px;
   margin-left: 30%;
   width: 600px;
-  height: 300px;
+  height: 320px;
   border-style: solid;
   border-radius: 10px;
   border-color: black;
@@ -137,23 +139,32 @@ body {
 
 .category img {
   object-fit: cover;
+  object-position: 0px 11%;
   border-radius: 10px;
   width: 600px;
-  height: 300px;
+  height: 320px;
 }
 
 .layer {
   width: 600px;
-  height: 300px;
+  height: 320px;
   border-radius: 10px;
-  transition: 0.5s;
+  transition: 0.5s ease-in-out;
+  position: absolute;
 }
-
+.layer:hover {
+  background: rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+}
 .layer h4 {
-  color: white;
+  color: black;
   text-align: center;
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
 }
-
+.layer h4:hover {
+  color: rgb(207, 198, 198);
+}
 .section1 {
   text-align: center;
   color: wheat;
@@ -164,7 +175,7 @@ body {
   margin: auto;
   margin-bottom: 50px;
   text-align: center;
-  font-family: arial;
+  font-family: "Outfit", sans-serif;
   color: black;
   display: none;
 }
@@ -182,6 +193,7 @@ body {
 .price {
   color: rgb(220, 170, 195);
   font-size: 22px;
+  font-family: "Outfit", sans-serif;
 }
 
 span {
@@ -289,4 +301,16 @@ input {
   width: 40%;
   height: 20%;
   background-color: aqua;
+}
+/*-----------CART/PRODUCT PAGE------*/
+.badge-notify {
+  background: red;
+  position: relative;
+  top: -20px;
+  right: 10px;
+}
+
+.my-cart-icon-affix {
+  position: fixed;
+  z-index: 999;
 }

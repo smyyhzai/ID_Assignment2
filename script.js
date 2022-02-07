@@ -80,7 +80,7 @@ for (var i = 0; i < btns.length; i++) {
   });
 }
 
-/* adding to cart*/
+/* -----adding to cart------*/
 $(function () {
   var goToCartIcon = function($addTocartBtn){
     var $cartIcon = $(".my-cart-icon");
@@ -94,27 +94,27 @@ $(function () {
       $image.remove();
     });
   }
-$('.my-cart-btn').myCart({
-  classCartIcon: 'my-cart-icon',
-  classCartBadge: 'my-cart-badge',
-  classProductQuantity: 'my-product-quantity',
-  classProductRemove: 'my-product-remove',
-  classCheckoutCart: 'my-cart-checkout',
-  affixCartIcon: true,
-  showCheckoutModal: true,
-  clickOnAddToCart: function($addTocart){
-    goToCartIcon($addTocart);
-  },
-  clickOnCartIcon: function($cartIcon, products, totalPrice, totalQuantity) {
-    console.log("cart icon clicked", $cartIcon, products, totalPrice, totalQuantity);
-  },
-  checkoutCart: function(products, totalPrice, totalQuantity) {
-    console.log("checking out", products, totalPrice, totalQuantity);
-  },
-  getDiscountPrice: function(products, totalPrice, totalQuantity) {
-    console.log("calculating discount", products, totalPrice, totalQuantity);
-    return totalPrice * 0.5;
-  }
-});
+  $('.my-cart-btn').myCart({
+    classCartIcon: 'my-cart-icon',
+    classCartBadge: 'my-cart-badge',
+    classProductQuantity: 'my-product-quantity',
+    classProductRemove: 'my-product-remove',
+    classCheckoutCart: 'my-cart-checkout',
+    affixCartIcon: true,
+    showCheckoutModal: true,
+    clickOnAddToCart: function($addTocart){
+      goToCartIcon($addTocart);
+    },
+    clickOnCartIcon: function($cartIcon, products, totalPrice, totalQuantity) {
+      console.log("cart icon clicked", $cartIcon, products, totalPrice, totalQuantity);
+    },
+    checkoutCart: function(products, totalPrice, totalQuantity) {
+      console.log("checking out", products, totalPrice, totalQuantity);
+    },
+    getDiscountPrice: function(products, totalPrice, totalQuantity) {
+      console.log("calculating discount", products, totalPrice, totalQuantity);
+      return totalPrice * 0.5;
+    }
+  });
 
 });
