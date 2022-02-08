@@ -438,3 +438,13 @@ aside {
     padding: 0 1rem;
   }
 }
+
+.check-out {
+  width: 100%;
+  height: auto;
+  padding: 200px;
+}
+.check-out h1 {
+  font-size: larger;
+  text-align: center;
+}

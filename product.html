@@ -54,7 +54,7 @@
     </header>
 
     <div class="section2">
-        <div class="container">
+        <div class="container2">
             <h1>Our Top products</h1>
             <nav class="mini-nav" id="myBtnContainer">
                 <button class="btn active" onclick="filterSelection('all')"> Show all</button>
@@ -62,10 +62,7 @@
                 <button class="btn" onclick="filterSelection('tops')"> Tops</button>
                 <button class="btn" onclick="filterSelection('bottoms')"> Bottoms</button>
             </nav>
-
         </div>
-
-
 
         <div class="row">
             <div class="card sweatshirts">
@@ -88,7 +85,7 @@
                 <h1>Turquoise Green</h1>
                 <p class="price">$15.00</p>
                 <p>Some text about the jeans..</p>
-                <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="25.99">Add To Cart</a>
+                <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="15.00">Add To Cart</a>
             </div>
         </div>
         <div class="row">
@@ -304,9 +301,9 @@
         </div>
 
     </div>
-    <div class="cd-cart cd-cart--empty js-cd-cart">
+    <div class="cd-cart cd-cart--empty js-cd-cart" style="margin: 0;">
         <i class="fa-solid fa-cart-plus" style="color: black;"></i>
-        <a href="#0" class="cd-cart__trigger text-replace">
+        <a href="#0" class="cd-cart__trigger text-replace" style="margin: 0;">
             Cart
             <ul class="cd-cart__count">
                 <!-- cart items count -->
@@ -316,21 +313,21 @@
         </a>
 
         <div class="cd-cart__content">
-            <div class="cd-cart__layout">
+            <div class=" cd-cart__layout" style="background-color: white;">
                 <header class="cd-cart__header">
                     <h2 style="padding: 15px 0; font-size: larger;">Cart</h2>
                     <span class="cd-cart__undo" style="padding: 15px 0; font-size: larger;">Item removed. <a
                             href="#0">Undo</a></span>
                 </header>
 
-                <div class="cd-cart__body">
-                    <ul>
+                <div class="cd-cart__body" style="height: auto; margin: 5px;">
+                    <ul style="height: auto; margin: 5px;">
                         <!-- products added to the cart will be inserted here using JavaScript -->
                     </ul>
                 </div>
 
-                <footer class="cd-cart__footer">
-                    <a href="#0" class="cd-cart__checkout">
+                <footer class="cd-cart__footer" style="height: auto;">
+                    <a href="cart.html" class="cd-cart__checkout">
                         <em>Checkout - $<span>0</span>
                             <svg class="icon icon--sm" viewBox="0 0 24 24">
                                 <g fill="none" stroke="currentColor">

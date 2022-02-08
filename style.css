@@ -114,6 +114,8 @@ body {
   height: auto;
   color: aliceblue;
   margin: 10px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
 }
 
 .mini-nav {
