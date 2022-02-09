@@ -167,9 +167,58 @@ body {
 .layer h4:hover {
   color: rgb(207, 198, 198);
 }
-.section1 {
+
+@media (max-width: 600px) {
+  .container h1 {
+    font-size: 30px;
+  }
+  .mini-nav ul li {
+    margin: 10px;
+  }
+  .category,
+  .category img,
+  .layer {
+    margin: 10px 10%;
+    width: 400px;
+    height: 220px;
+  }
+  .menu,
+  menu ul {
+    width: 600px;
+    text-align: right;
+    padding: 10px;
+    padding-bottom: 0;
+  }
+  .main-header {
+    height: 70%;
+    width: 100%;
+  }
+  .text-box {
+    margin: 0;
+    padding: 0;
+    top: 360px;
+  }
+}
+
+/*--------PRODUCT PAGE-------*/
+.product-header {
+  color: white;
+  padding: 10px;
+  padding-top: 20%;
+  padding-bottom: 0%;
+  margin: 0px;
+  font-size: 70px;
+  background-color: black;
+  font-family: "Special Elite", cursive;
+  width: 100%;
   text-align: center;
-  color: wheat;
+}
+.container2 h1 {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  color: white;
+  font-weight: 600;
 }
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -198,24 +247,6 @@ body {
   font-family: "Outfit", sans-serif;
 }
 
-span {
-  cursor: pointer;
-}
-span .number {
-  margin: 100px;
-}
-.minus,
-.plus {
-  width: 20px;
-  height: 20px;
-  background: #f2f2f2;
-  border-radius: 4px;
-  padding: 8px 5px 8px 5px;
-  border: 1px solid #ddd;
-  display: inline-block;
-  vertical-align: middle;
-  text-align: center;
-}
 input {
   height: 34px;
   width: 100px;
@@ -279,6 +310,8 @@ input {
   margin-top: 20px;
   overflow: hidden;
 }
+
+/*----------PROFILE PAGE---------- */
 
 /* Style the buttons */
 .btn {

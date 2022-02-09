@@ -47,15 +47,13 @@
             </ul>
         </nav>
 
-        <section class="text-box">
-            <h1>Product</h1>
-        </section>
+        <div class="product-header">Product</div>
 
     </header>
 
-    <div class="section2">
+    <div class="section2" id="return">
         <div class="container2">
-            <h1>Our Top products</h1>
+            <h1>OUR PRODUCTS</h1>
             <nav class="mini-nav" id="myBtnContainer">
                 <button class="btn active" onclick="filterSelection('all')"> Show all</button>
                 <button class="btn" onclick="filterSelection('sweatshirts')"> Sweatshirts</button>
@@ -66,15 +64,16 @@
 
         <div class="row">
             <div class="card sweatshirts">
-                <img src="images/Screenshot 2022-02-07 120040.jpg">
-                <h1>Basic Grey Sweat</h1>
-                <p class="price">$10.00</p>
-                <p>Some text about the jeans..</p>
-                <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="10.00">Add
-                    To Cart</a>
+                <div class="product1">
+                    <img src="images/Screenshot 2022-02-07 120040.jpg" class="prod-image">
+                    <h1 class="prod-name">Basic Grey Sweat</h1>
+                    <p class="price">$10.00</p>
+                    <p class="cd-cart__details">Some text about the jeans..</p>
+                    <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="10.00">Add To Cart</a>
+                </div>
             </div>
             <div class="card sweatshirts">
-                <img src="images/Screenshot 2022-02-07 120055.jpg">
+                <img src="images/Screenshot 2022-02-07 120055.jpg" class="cd-cart__image">
                 <h1>Soft Grey Sweat</h1>
                 <p class="price">$10.00</p>
                 <p>Some text about the jeans..</p>
@@ -94,21 +93,21 @@
                 <h1>Hard Grey Sweat</h1>
                 <p class="price">$15.00</p>
                 <p>Some text about the jeans..</p>
-                <p><button>Add to Cart</button></p>
+                <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="15.00">Add To Cart</a>
             </div>
             <div class="card sweatshirts">
                 <img src="images/sw5.jpg">
                 <h1>Pastel Green Sweat</h1>
                 <p class="price">$15.00</p>
                 <p>Some text about the jeans..</p>
-                <p><button>Add to Cart</button></p>
+                <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="15.00">Add To Cart</a>
             </div>
             <div class="card sweatshirts">
                 <img src="images/sw6.jpg">
                 <h1>Chocolate Brown Sweat</h1>
                 <p class="price">$11.00</p>
                 <p>Some text about the jeans..</p>
-                <p><button>Add to Cart</button></p>
+                <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="11.00">Add To Cart</a>
             </div>
         </div>
 
@@ -118,21 +117,21 @@
                 <h1>Super City Tee</h1>
                 <p class="price">$10.00</p>
                 <p>Some text about the jeans..</p>
-                <p><button>Add to Cart</button></p>
+                <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="10.00">Add To Cart</a>
             </div>
             <div class="card tops">
                 <img src="images/2.jpg">
                 <h1>Cloud Tee</h1>
                 <p class="price">$10.00</p>
                 <p>Some text about the jeans..</p>
-                <p><button>Add to Cart</button></p>
+                <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="10.00">Add To Cart</a>
             </div>
             <div class="card tops">
                 <img src="images/3.jpg">
                 <h1>Butterfly Tee</h1>
                 <p class="price">$10.00</p>
                 <p>Some text about the jeans..</p>
-                <p><button>Add to Cart</button></p>
+                <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="10.00">Add To Cart</a>
             </div>
         </div>
         <div class="row">
@@ -141,21 +140,21 @@
                 <h1>23 tee</h1>
                 <p class="price">$10.00</p>
                 <p>Some text about the jeans..</p>
-                <p><button>Add to Cart</button></p>
+                <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="10.00">Add To Cart</a>
             </div>
             <div class="card tops">
                 <img src="images/5.jpg">
                 <h1>Skeleton Tee</h1>
                 <p class="price">$10.00</p>
                 <p>Some text about the jeans..</p>
-                <p><button>Add to Cart</button></p>
+                <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="10.00">Add To Cart</a>
             </div>
             <div class="card tops">
                 <img src="images/6.jpg">
                 <h1>Off Mind Tee</h1>
                 <p class="price">$10.00</p>
                 <p>Some text about the jeans..</p>
-                <p><button>Add to Cart</button></p>
+                <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="10.00">Add To Cart</a>
             </div>
         </div>
 
@@ -165,21 +164,21 @@
                 <h1>Space Tee</h1>
                 <p class="price">$10.00</p>
                 <p>Some text about the jeans..</p>
-                <p><button>Add to Cart</button></p>
+                <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="10.00">Add To Cart</a>
             </div>
             <div class="card tops">
                 <img src="images/8.jpg">
                 <h1>Future Robots Tee</h1>
                 <p class="price">$10.00</p>
                 <p>Some text about the jeans..</p>
-                <p><button>Add to Cart</button></p>
+                <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="10.00">Add To Cart</a>
             </div>
             <div class="card tops">
                 <img src="images/9.jpg">
                 <h1>Natural Tee</h1>
                 <p class="price">$10.00</p>
                 <p>Some text about the jeans..</p>
-                <p><button>Add to Cart</button></p>
+                <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="10.00">Add To Cart</a>
             </div>
         </div>
         <div class="row">
@@ -188,21 +187,21 @@
                 <h1>Lost Mind Tee</h1>
                 <p class="price">$10.00</p>
                 <p>Some text about the jeans..</p>
-                <p><button>Add to Cart</button></p>
+                <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="10.00">Add To Cart</a>
             </div>
             <div class="card tops">
                 <img src="images/11.jpg">
                 <h1>Bring Tee</h1>
                 <p class="price">$10.00</p>
                 <p>Some text about the jeans..</p>
-                <p><button>Add to Cart</button></p>
+                <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="10.00">Add To Cart</a>
             </div>
             <div class="card tops">
                 <img src="images/12.jpg">
                 <h1>Heart Tee</h1>
                 <p class="price">$10.00</p>
                 <p>Some text about the jeans..</p>
-                <p><button>Add to Cart</button></p>
+                <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="10.00">Add To Cart</a>
             </div>
         </div>
 
@@ -212,21 +211,21 @@
                 <h1>Space Grey Pants</h1>
                 <p class="price">$12.00</p>
                 <p>Some text about the jeans..</p>
-                <p><button>Add to Cart</button></p>
+                <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="12.00">Add To Cart</a>
             </div>
             <div class="card bottoms">
                 <img src="images/b2.jpg">
                 <h1>Beige Shorts</h1>
                 <p class="price">$7.00</p>
                 <p>Some text about the jeans..</p>
-                <p><button>Add to Cart</button></p>
+                <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="7.00">Add To Cart</a>
             </div>
             <div class="card bottoms">
                 <img src="images/b5.jpg">
                 <h1>North Shorts</h1>
                 <p class="price">$7.50</p>
                 <p>Some text about the jeans..</p>
-                <p><button>Add to Cart</button></p>
+                <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="7.50">Add To Cart</a>
             </div>
         </div>
         <div class="row">
@@ -235,21 +234,21 @@
                 <h1>Checkered Pants</h1>
                 <p class="price">$11.00</p>
                 <p>Some text about the jeans..</p>
-                <p><button>Add to Cart</button></p>
+                <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="11.00">Add To Cart</a>
             </div>
             <div class="card bottoms">
                 <img src="images/b4.jpg">
                 <h1>Basic Black Pants</h1>
                 <p class="price">$11.00</p>
                 <p>Some text about the jeans..</p>
-                <p><button>Add to Cart</button></p>
+                <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="11.00">Add To Cart</a>
             </div>
             <div class="card bottoms">
                 <img src="images/b6.jpg">
                 <h1>L.A Shorts</h1>
                 <p class="price">$6.90</p>
                 <p>Some text about the jeans..</p>
-                <p><button>Add to Cart</button></p>
+                <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="6.90">Add To Cart</a>
             </div>
         </div>
         <div class="row">
@@ -258,21 +257,21 @@
                 <h1>Original Shorts</h1>
                 <p class="price">$6.50</p>
                 <p>Some text about the jeans..</p>
-                <p><button>Add to Cart</button></p>
+                <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="6.50">Add To Cart</a>
             </div>
             <div class="card bottoms">
                 <img src="images/b8.jpg">
                 <h1>Rainbow Shorts</h1>
                 <p class="price">$6.50</p>
                 <p>Some text about the jeans..</p>
-                <p><button>Add to Cart</button></p>
+                <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="6.50">Add To Cart</a>
             </div>
             <div class="card bottoms">
                 <img src="images/b9.jpg">
                 <h1>Real Shorts</h1>
                 <p class="price">$6.50</p>
                 <p>Some text about the jeans..</p>
-                <p><button>Add to Cart</button></p>
+                <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="6.50">Add To Cart</a>
             </div>
         </div>
 
@@ -282,27 +281,31 @@
                 <h1>Smiley Shorts</h1>
                 <p class="price">$6.50</p>
                 <p>Some text about the jeans..</p>
-                <p><button>Add to Cart</button></p>
+                <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="6.50">Add To Cart</a>
             </div>
             <div class="card bottoms">
                 <img src="images/b11.jpg">
                 <h1>Butterfly Shorts</h1>
                 <p class="price">$6.50</p>
                 <p>Some text about the jeans..</p>
-                <p><button>Add to Cart</button></p>
+                <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="6.50">Add To Cart</a>
             </div>
             <div class="card bottoms">
                 <img src="images/b12.jpg">
                 <h1>Dino Shorts</h1>
                 <p class="price">$6.50</p>
                 <p>Some text about the jeans..</p>
-                <p><button>Add to Cart</button></p>
+                <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="6.50">Add To Cart</a>
             </div>
         </div>
-
+        <div class="btn-container">
+            <button class="topbtn">
+                <a href="#return">Back to Top</a>
+            </button>
+        </div>
     </div>
+
     <div class="cd-cart cd-cart--empty js-cd-cart" style="margin: 0;">
-        <i class="fa-solid fa-cart-plus" style="color: black;"></i>
         <a href="#0" class="cd-cart__trigger text-replace" style="margin: 0;">
             Cart
             <ul class="cd-cart__count">

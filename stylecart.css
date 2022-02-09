@@ -3933,8 +3933,47 @@ body {
   font-size: larger;
   font-weight: 500px;
 }
+
+.cd-cart {
+  background-color: aliceblue;
+}
 .cd-add-to-cart {
-  padding: 10px 40px;
+  padding: 12px 50px;
   margin: 5px;
   border-radius: 5px;
+  font-family: "Outfit", sans-serif;
+  font-size: larger;
+  font-weight: 500px;
+}
+.cd-add-to-cart:hover {
+  background-color: rgb(223, 196, 196);
+  text-decoration: none;
+  color: black;
+}
+.cd-add-to-cart::after {
+  text-decoration: none;
+}
+.btn-container {
+  width: 100%;
+}
+.topbtn {
+  width: 40%;
+  background-color: rgb(241, 234, 234);
+  padding: 15px 8px;
+  border-radius: 5px;
+  margin: 10% 25% 25% 30%;
+}
+.topbtn:hover {
+  background-color: rgb(223, 196, 196);
+  transition: 0.5s ease;
+}
+.topbtn a {
+  color: black;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+}
+.topbtn a:link,
+a:visited {
+  text-decoration: none;
 }
