@@ -66,7 +66,9 @@ body {
   position: fixed;
   z-index: 1;
 }
-
+.sub-header {
+  padding: 0;
+}
 .text-box {
   width: 90%;
   position: absolute;
@@ -338,47 +340,62 @@ input {
   background-color: aqua;
 }
 /*-----------CART/PRODUCT PAGE------*/
-.badge-notify {
-  background: red;
-  position: relative;
-  top: -20px;
-  right: 10px;
+
+.cart-header {
+  color: white;
+  padding: 10px;
+  padding-top: 20%;
+  padding-bottom: 0%;
+  margin: 0px;
+  font-size: 70px;
+  background-color: black;
+  font-family: "Special Elite", cursive;
+  width: 100%;
+  text-align: center;
 }
 
-.my-cart-icon-affix {
-  position: fixed;
-  z-index: 999;
+.check-out {
+  color: white;
+  width: 100;
+  text-align: center;
+  margin: 0;
+  height: 0;
+  padding: 10px;
 }
-
-
+.check-out p {
+  margin-top: 100px;
+}
+.cart-body {
+}
 /*-----------5 star rating--------*/
 .rate {
   float: left;
   height: 46px;
-  padding: 0 10px;
+  padding: 0px 50px;
+  margin-top: 0;
 }
 .rate:not(:checked) > input {
-  position:absolute;
-  top:-9999px;
+  position: absolute;
+  top: -9999px;
 }
 .rate:not(:checked) > label {
-  float:right;
-  width:1em;
-  overflow:hidden;
-  white-space:nowrap;
-  cursor:pointer;
-  font-size:30px;
-  color:#ccc;
+  float: right;
+  width: 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 30px;
+  color: #ccc;
 }
 .rate:not(:checked) > label:before {
-  content: '★ ';
+  content: "★ ";
 }
 .rate > input:checked ~ label {
-  color: #ffc700;    
+  color: #ffc700;
 }
 .rate:not(:checked) > label:hover,
 .rate:not(:checked) > label:hover ~ label {
-  color: #deb217;  
+  color: #deb217;
 }
 .rate > input:checked + label:hover,
 .rate > input:checked + label:hover ~ label,
@@ -388,3 +405,174 @@ input {
   color: #c59b08;
 }
 
+/*----------- CHECKOUT PAGE--------*/
+.form {
+  font-family: "Outfit", sans-serif;
+  font-size: 10px;
+}
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+  height: auto;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.chkcontainer {
+  background-color: #f5f3f3;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  margin: 30px;
+}
+
+input[type="text"] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc; /* each inputborder */
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.checkoutbtn {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin: 10px 0px;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.checkoutbtn:hover {
+  background-color: rgb(192, 161, 161);
+}
+
+a {
+  color: #2196f3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .chkcontainer {
+    margin: 20px;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+
+/*-----------SPIN THE WHEEL-------------- */
+
+/* Sets the background image for the wheel */
+td.the_wheel {
+  background-image: url(./wheel_back.png);
+  background-position: center;
+  background-repeat: none;
+}
+
+/* Do some css reset on selected elements */
+h1,
+p {
+  margin: 0;
+}
+
+div.power_controls {
+  margin-right: 70px;
+}
+
+div.html5_logo {
+  margin-left: 70px;
+}
+
+/* Styles for the power selection controls */
+table.power {
+  background-color: #cccccc;
+  cursor: pointer;
+  border: 1px solid #333333;
+}
+
+table.power th {
+  background-color: white;
+  cursor: default;
+}
+
+td.pw1 {
+  background-color: #6fe8f0;
+}
+
+td.pw2 {
+  background-color: #86ef6f;
+}
+
+td.pw3 {
+  background-color: #ef6f6f;
+}
+
+/* Style applied to the spin button once a power has been selected */
+.clickable {
+  cursor: pointer;
+}
+
+/* Other misc styles */
+.margin_bottom {
+  margin-bottom: 5px;
+}
+.power_controls {
+  height: auto;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+}
+
+.power {
+  font-weight: bolder;
+}
