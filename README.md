@@ -19,19 +19,38 @@ This is an e-commerce website that allows users to shop for clothings. They can 
 
 ## Features
 
+- Navigation bar that sticks to the top at every page
+
+Home page
 - Home page with categories of clothings available
-- Search bar to filter products
+
+Product page
 - Product page shows all products available
-- Profile page allows users to log in or create their own account
-- Shopping cart shows users cart
-- History page to view all orders placed previously, as well as the status of their order
-- Rewards page allows users to collect points and view all rewards available
+- Buttons to filter type of products
+- Search bar to filter products
+- Add to cart allows users to add the products to their cart at the bottom right of the screen
+
+ Checkout page (from the cart)
+- Allows users to checkout and leave a review of their shopping experience
+
+Rewards page
+- Allows users to collect points and view all rewards available
+- Every $10 spent should give 1 star
+- 5 stars can be exchanged for either a spin on the wheel or $10 off the next purchase
 - Spin the wheel will be in the reward page
+- Lottie animation while waiting for the wheel to spin
+
+Profile page
+- Profile page allows users to log in or create their own account using API and restDB
+- Users' cart will be saved if they have an account
+- View all orders placed previously, as well as the status of their order
 
 ### Existing Features
 
 ### Features Left to Implement
-
+- Cart and checkout page
+- Rewards page
+- Profile page
 ## Technologies Used
 
 - [HTML](https://html.com)
@@ -44,13 +63,32 @@ This is an e-commerce website that allows users to shop for clothings. They can 
 - [JQUERY](https://jquery.com)
 
 ## Testing
+Navigation bar
+- Scroll down the page and ensure that the navigation bar sticks to the top
 
+Product page
+- Product page should show all products when first entered
+- Click "Sweatshirts" to filter products and show sweatshirts only etc.
+- Add a product to the cart and the cart should display the product and the correct price
+- Add more products and the total price should be calculated correctly
+- Checkout should lead you to the review page
+
+Reward page
+- Rewards should be issued once they reach a certain spending 
+- Stars are deducted accordingly when used
+
+Profile page
+- At the log in page, the fields should not be blank when submitted
+- Create an account and log in, users should be able to log in
+- Add items to your cart when logged in, users should be able to view the cart the next time they log in
+- Rewards should be saved as well
+- They should be able to view their order history
 ## Credits
 
 ### Content
 
 ### Media
-
+- Images are taken from pinterest and shein
 ### Acknowledgements
 
 - I received inspiration for this project from mr peter hung.
