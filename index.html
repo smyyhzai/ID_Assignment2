@@ -6,8 +6,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+
     <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,24 +28,27 @@
     <header class="main-header">
         <nav class="menu" id="navbar">
             <ul class="topnav" id="myTopnav">
-                <li><a href="index.html" class="active"><i class="fas fa-home"></i></a></li>
+                <a href="index.html" class="logo">black tag.</a>
+                <li><a href="index.html"><i class="fas fa-home"></i></a></li>
                 <li><a href="product.html"><i class="fas fa-tshirt"></i></a></li>
-                <li><a href="rewards.html"><i class="fa-regular fa-star"></i></a></li>
+                <li><a href="rewards.html"><i class="fas fa-star"></i></a></li>
                 <li><a href="profile.html"><i class="fas fa-user"></i></a></li>
 
             </ul>
         </nav>
 
-        <section class="text-box">
+        <div class="text-box">
             <h1>black tag.</h1>
-            <h2>welcome to</h2>
-            <h3>Where casual street-wear meets fashion</h3>
-        </section>
-    </header>
+            <p>Where casual street wear meets fashion</p>
+        </div>
 
-    <div class="section2">
+    </header>
+    <div class="exp">
+        <a href="#1" class="expbtn">EXPLORE MORE</a>
+    </div>
+    <!-------- 
         <div class="container">
-            <h1>Our Top products</h1>
+            <h1>Our Top Products</h1>
             <nav class="mini-nav">
                 <ul>
                     <li>More products |</li>
@@ -51,37 +58,88 @@
                     <li>Others</li>
             </nav>
         </div>
-        <div class="row">
-            <a href="product.html" class="category">
-                <div class="layer">
-                    <h4>SWEATSHIRTS</h4>
-                </div>
-                <img src="images/sweats3.jpg">
-            </a>
+    and --->
 
-            <a href="product.html" class="category">
-                <div class="layer">
-                    <h4>TOPS</h4>
-                </div>
-                <img src="images/top.png">
-            </a>
 
-            <a href="product.html" class="category">
-                <div class="layer">
-                    <h4>BOTTOMS</h4>
-                </div>
-                <img src="images/shortss.jpg">
-            </a>
+    <h2 class="gallery-header" id="1">OUR PRODUCTS</h2>
+    <div class="cat-row">
+        <a href="product.html" class="category">
+            <div class="layer">
+                <h4>SWEATSHIRTS</h4>
+            </div>
+            <img src="images/sweats3.jpg">
+        </a>
+
+        <a href="product.html" class="category">
+            <div class="layer">
+                <h4>TOPS</h4>
+            </div>
+            <img src="images/top.png">
+        </a>
+
+        <a href="product.html" class="category">
+            <div class="layer">
+                <h4>BOTTOMS</h4>
+            </div>
+            <img src="images/shortss.jpg">
+        </a>
+        <a href="product.html" class="category">
+            <div class="layer">
+                <h4>SHOES</h4>
+            </div>
+            <img src="images/shoes.jpg">
+        </a>
+    </div>
+
+    <!----------------- gallery ---------------->
+    <div class="section2">
+
+        <h2 class="gallery-header">OUR GALLERY</h2>
+        <div class="w3-content w3-display-container">
+
+            <img class="mySlides" src="images/gallery0.jpg">
+            <img class="mySlides" src="images/gallery7.jfif">
+            <img class="mySlides" src="images/gallery8.jfif">
+            <img class="mySlides" src="images/gallery5.jfif">
+            <img class="mySlides" src="images/gallery3.jpg">
+
+
+
+
+            <button class="w3-button w3-black w3-display-left" style="height:auto; margin-top:-100px;"
+                onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-black w3-display-right" style="height: auto; margin-top: -100px;"
+                onclick="plusDivs(1)">&#10095;</button>
 
         </div>
-
     </div>
+
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = x.length };
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+        }
+    </script>
 
     <!----------------- footer ---------------->
     <section class="footer">
         <h4>All Rights Reserved©</h4>
-        <p>Made by gwen & sumo <br>Interactive Development Assignment 2, January 2022.</p>
+        <p>Made by gwen & sumayyah <br>Interactive Development Assignment 2, January 2022.</p>
     </section>
+
 
 </body>
 

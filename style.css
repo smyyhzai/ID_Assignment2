@@ -17,10 +17,10 @@ body {
   background-size: cover;
   background-position: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-    url(street.gif);
+    url("street.gif");
 }
 .main-header img {
-  height: 70px;
+  height: 100%;
   width: 95px;
   position: relative;
   top: -10%;
@@ -69,55 +69,64 @@ body {
 .sub-header {
   padding: 0;
 }
+.logo,
+.logo:hover {
+  list-style-type: none;
+  text-decoration: none;
+  color: white;
+  font-family: "Special Elite" cursive;
+  font-weight: 600;
+  font-size: 12px;
+  float: left;
+  margin: 15px 0 0 15px;
+}
+
 .text-box {
   width: 90%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 45%;
+  height: auto;
+  width: 50%;
+  background-color: rgba(0, 0, 0, 0.455);
+  border-style: solid;
+  border-color: white;
+  padding: 10px;
 }
 
 .text-box h1 {
   font-family: "Special Elite", cursive;
-  font-size: 70px;
+  font-size: 100px;
   margin: 10px;
-  color: rgb(255, 255, 255);
+  color: white;
   text-align: center;
-  position: relative;
-  top: 35%;
 }
-.text-box h2 {
-  font-family: "Outfit", sans-serif;
-  font-weight: 500;
-  color: rgb(241, 216, 229);
-  text-align: center;
+
+.text-box p {
+  color: white;
   position: relative;
-  top: -88%;
+  text-align: center;
 }
-.text-box h3 {
-  font-family: "Outfit", sans-serif;
-  color: rgb(241, 216, 229);
-  position: relative;
-  text-align: center;
-  top: -140%;
+
+.exp {
+  width: 100%;
+  height: 10%;
+  margin: -100px 0 100px 50%;
 }
 
 .expbtn {
-  height: 30px;
-  width: 100px;
-  border-color: black;
-  position: relative;
-  top: 60%;
-  left: 37%;
+  color: white;
+  padding: 20px 10px 20px 10px;
+  text-align: center;
+  border-style: solid;
+  border-color: white;
+  height: auto;
 }
 
-.section2 {
-  height: auto;
-  color: aliceblue;
-  margin: 10px;
-  font-family: "Outfit", sans-serif;
-  font-weight: 600;
+.expbtn:hover {
+  text-decoration: none;
+  color: rgb(192, 161, 161);
 }
 
 .mini-nav {
@@ -129,30 +138,38 @@ body {
   margin: 30px;
 }
 
+.cat-row {
+  width: 100%;
+  margin-bottom: 15px;
+  margin: auto;
+  margin-bottom: 100px;
+  margin-left: 30px;
+  height: auto;
+}
+
 .category {
-  margin: 30px;
-  margin-left: 30%;
+  padding: 0px 0 0px 0;
   width: 600px;
   height: 320px;
   border-style: solid;
-  border-radius: 10px;
-  border-color: black;
-  padding: 0px;
-  justify-content: center;
+  border-radius: 0px;
+  border-color: transparent;
+  display: inline-block;
+  margin: auto;
 }
 
 .category img {
-  object-fit: cover;
-  object-position: 0px 11%;
-  border-radius: 10px;
+  object-position: 0px 15%;
+  border-radius: 0px;
   width: 600px;
   height: 320px;
+  object-fit: cover;
 }
 
 .layer {
   width: 600px;
   height: 320px;
-  border-radius: 10px;
+  border-radius: 0px;
   transition: 0.5s ease-in-out;
   position: absolute;
 }
@@ -170,53 +187,81 @@ body {
   color: rgb(207, 198, 198);
 }
 
-@media (max-width: 600px) {
-  .container h1 {
-    font-size: 30px;
+@media (max-width: 800px) {
+  .category {
+    margin: auto;
+    flex: 100%;
   }
-  .mini-nav ul li {
-    margin: 10px;
+  .menu {
+    margin: auto;
   }
-  .category,
-  .category img,
-  .layer {
-    margin: 10px 10%;
-    width: 400px;
-    height: 220px;
-  }
-  .menu,
-  menu ul {
-    width: 600px;
-    text-align: right;
-    padding: 10px;
-    padding-bottom: 0;
-  }
-  .main-header {
-    height: 70%;
-    width: 100%;
-  }
-  .text-box {
-    margin: 0;
-    padding: 0;
-    top: 360px;
+
+  .text-box h1 {
+    font-size: 50px;
   }
 }
 
 /*--------PRODUCT PAGE-------*/
+.prod-sub-header {
+  height: 100%;
+  width: 100%;
+  background-size: contain;
+  background-position: center;
+  object-fit: contain;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("/images/2.png");
+}
+
+.shopbtn {
+  width: 100%;
+  text-align: center;
+  color: white;
+  padding: 20px 10px 20px 10px;
+  border: solid;
+  border-color: white;
+  background-color: transparent;
+  margin: -100px 0 100px 45%;
+}
+
+.shopbtn:hover {
+  text-decoration: none;
+  color: white;
+  background-color: rgb(192, 161, 161);
+}
+
+.section2 {
+  height: auto;
+}
+
 .product-header {
   color: white;
-  padding: 10px;
-  padding-top: 20%;
-  padding-bottom: 0%;
-  margin: 0px;
-  font-size: 70px;
+  font-size: 50px;
   background-color: black;
   font-family: "Special Elite", cursive;
+  width: 100%;
+  margin: auto;
+  height: auto;
+  text-align: center;
+}
+.mini-nav {
+  padding: 10px;
+}
+.mini-nav button {
+  padding: 10px 20px;
+  margin: 5px;
+  border-style: solid;
+  border-color: white;
+  background-color: transparent;
+  color: white;
+}
+.mini-nav button:hover {
+  background-color: rgb(192, 161, 161);
+}
+.container2 {
   width: 100%;
   text-align: center;
 }
 .container2 h1 {
-  width: 100%;
   text-align: center;
   padding: 10px;
   color: white;
@@ -365,8 +410,7 @@ input {
 .check-out p {
   margin-top: 100px;
 }
-.cart-body {
-}
+
 /*-----------5 star rating--------*/
 .rate {
   float: left;
@@ -575,4 +619,22 @@ td.pw3 {
 
 .power {
   font-weight: bolder;
+}
+
+/* index html gallery */
+.gallery-header {
+  color: white;
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  height: 10%;
+  margin: 20px;
+  width: auto;
+}
+.mySlides {
+  display: none;
+  width: 580px;
+  height: 380px;
+  object-fit: cover;
+  margin: auto;
 }
