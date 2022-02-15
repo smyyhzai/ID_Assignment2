@@ -22,7 +22,7 @@
 
 </head>
 
-<body class="profile-body">
+<body class="profile-body" style="height: 15%;">
   <header class="sub-header">
     <nav class="menu" id="navbar">
       <ul id="menu">
@@ -31,17 +31,31 @@
         <li><a href="product.html"><i class="fas fa-tshirt"></i></a></li>
         <li><a href="rewards.html"><i class="fas fa-star"></i></a></li>
         <li><a href="profile.html"><i class="fas fa-user"></i></a></li>
-        <li><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"
-            class="lgn">Login</button></li>
       </ul>
-
     </nav>
-
-    <section class="profile-text-box">
-      <h1>Profile</h1>
-    </section>
-
   </header>
+
+  <div class="loginbutton">
+    <h3>Already have an account?</h3>
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"
+      class="lgn">Login</button>
+  </div>
+
+  <div class="signupform">
+    <h2>Signup here</h2>
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+    <label for="uname"><b>Username</b></label>
+    <input type="text" id="name" placeholder="Enter Username" name="uname" required>
+    <label for="psw"><b>Password</b></label>
+    <input type="password" id="password" placeholder="Enter Password" name="psw" required>
+    <button type="submit" id="login-submit">Signup</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+    <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+  </div>
 
   <div id="id01" class="modal">
 

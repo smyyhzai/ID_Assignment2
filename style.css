@@ -19,6 +19,7 @@ body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
     url("street.gif");
 }
+
 .main-header img {
   height: 100%;
   width: 95px;
@@ -67,7 +68,8 @@ body {
   z-index: 1;
 }
 .sub-header {
-  padding: 0;
+  height: 10%;
+  width: 100%;
 }
 .logo,
 .logo:hover {
@@ -112,21 +114,25 @@ body {
 .exp {
   width: 100%;
   height: 10%;
-  margin: -100px 0 100px 50%;
+  display: flex;
 }
 
 .expbtn {
+  height: 0;
+  width: 26%;
   color: white;
-  padding: 20px 10px 20px 10px;
+  padding: 20px;
   text-align: center;
   border-style: solid;
   border-color: white;
-  height: auto;
+  flex: 10%;
+  margin-top: -120px;
+  text-align: center;
 }
 
 .expbtn:hover {
   text-decoration: none;
-  color: rgb(192, 161, 161);
+  color: white;
 }
 
 .mini-nav {
@@ -212,23 +218,18 @@ body {
     url("/images/2.png");
 }
 
-.shopbtn {
-  width: 100%;
+.btn-container {
+  display: flex;
+  height: 0;
+}
+#shopnow {
   text-align: center;
-  color: white;
-  padding: 20px 10px 20px 10px;
-  border: solid;
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  border-style: solid;
   border-color: white;
-  background-color: transparent;
-  margin: -100px 0 100px 45%;
 }
-
-.shopbtn:hover {
-  text-decoration: none;
-  color: white;
-  background-color: rgb(192, 161, 161);
-}
-
 .section2 {
   height: auto;
 }
@@ -384,39 +385,52 @@ input {
   height: 20%;
   background-color: aqua;
 }
-/*-----------CART/PRODUCT PAGE------*/
 
-.cart-header {
-  color: white;
-  padding: 10px;
-  padding-top: 20%;
-  padding-bottom: 0%;
-  margin: 0px;
-  font-size: 70px;
-  background-color: black;
-  font-family: "Special Elite", cursive;
+/*--------------CART PAGE------*/
+.cart-body {
   width: 100%;
-  text-align: center;
 }
 
 .check-out {
   color: white;
-  width: 100;
   text-align: center;
-  margin: 0;
-  height: 0;
+  margin: 10px;
+  height: auto;
   padding: 10px;
 }
+
 .check-out p {
-  margin-top: 100px;
+  margin: 10px;
 }
 
-/*-----------5 star rating--------*/
+.animation {
+  width: 100px;
+  height: 100px;
+  margin: 30px;
+  display: flex;
+  align-items: center;
+}
+
+/* 5 star rating */
+.star-rating {
+  height: 10%;
+  width: 100%;
+  margin: 10px;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+}
+.star-rating h3 {
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-family: "Outfit", sans-serif;
+}
+
 .rate {
-  float: left;
-  height: 46px;
+  height: auto;
   padding: 0px 50px;
-  margin-top: 0;
+  margin: auto;
 }
 .rate:not(:checked) > input {
   position: absolute;
@@ -448,11 +462,35 @@ input {
 .rate > label:hover ~ input:checked ~ label {
   color: #c59b08;
 }
+.mini-btn {
+  width: 100%;
+  height: auto;
+  display: inline-flex;
+  align-items: center;
+}
+
+.contbtn {
+  flex: 20%;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  border-style: solid;
+  border-color: white;
+  padding: 10px;
+  margin: 40px;
+}
+
+.contbtn:hover {
+  text-decoration: none;
+  background-color: rgb(192, 161, 161);
+  color: white;
+}
 
 /*----------- CHECKOUT PAGE--------*/
 .form {
   font-family: "Outfit", sans-serif;
-  font-size: 10px;
+  font-size: 12px;
+  height: auto;
 }
 .row {
   display: -ms-flexbox; /* IE10 */
@@ -485,7 +523,8 @@ input {
 }
 
 .chkcontainer {
-  background-color: #f5f3f3;
+  font-family: "Outfit", sans-serif;
+  background-color: rgb(243, 237, 237);
   padding: 5px 20px 15px 20px;
   border: 1px solid lightgrey;
   border-radius: 3px;
@@ -522,23 +561,12 @@ label {
   border-radius: 3px;
   cursor: pointer;
   font-size: 17px;
+  text-decoration: none;
 }
 
 .checkoutbtn:hover {
   background-color: rgb(192, 161, 161);
-}
-
-a {
-  color: #2196f3;
-}
-
-hr {
-  border: 1px solid lightgrey;
-}
-
-span.price {
-  float: right;
-  color: grey;
+  text-decoration: none;
 }
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
@@ -554,7 +582,7 @@ span.price {
   }
 }
 
-/*-----------SPIN THE WHEEL-------------- */
+/*-----------REWARDS.HTML spin the wheel -------------- */
 
 /* Sets the background image for the wheel */
 td.the_wheel {
