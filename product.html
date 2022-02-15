@@ -10,11 +10,6 @@
 
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <style>
-
-    </style>
-
-
 
     <script>document.getElementsByTagName("html")[0].className += " js";</script>
     <link rel="stylesheet" href="stylecart.css">
@@ -37,28 +32,28 @@
 </head>
 
 <body>
-    <header class="sub-header">
+    <header class="prod-sub-header">
         <nav class="menu" id="navbar">
             <ul id="menu">
+                <a href="index.html" class="logo">black tag.</a>
                 <li><a href="index.html"><i class="fas fa-home"></i></a></li>
                 <li><a href="product.html"><i class="fas fa-tshirt"></i></a></li>
-                <li><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
+                <li><a href="rewards.html"><i class="fas fa-star"></i></a></li>
                 <li><a href="profile.html"><i class="fas fa-user"></i></a></li>
             </ul>
         </nav>
-
-        <div class="product-header">Products</div>
-
     </header>
+
+    <a href="#return" class="shopbtn">SHOP NOW</a>
 
     <div class="section2" id="return">
         <div class="container2">
-            <h1>OUR PRODUCTS</h1>
+            <h2 class="gallery-header" style="font-size: 30px;">OUR PRODUCTS</h2>
             <nav class="mini-nav" id="myBtnContainer">
-                <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-                <button class="btn" onclick="filterSelection('sweatshirts')"> Sweatshirts</button>
-                <button class="btn" onclick="filterSelection('tops')"> Tops</button>
-                <button class="btn" onclick="filterSelection('bottoms')"> Bottoms</button>
+                <button onclick="filterSelection('all')"> Show all</button>
+                <button onclick="filterSelection('sweatshirts')"> Sweatshirts</button>
+                <button onclick="filterSelection('tops')"> Tops</button>
+                <button onclick="filterSelection('bottoms')"> Bottoms</button>
             </nav>
         </div>
 
@@ -80,7 +75,7 @@
                 <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="10.00">Add To Cart</a>
             </div>
             <div class="card sweatshirts">
-                <img src="images/sw3.jpg">
+                <img src="images/Screenshot 2022-02-07 120019.jpg">
                 <h1>Turquoise Green</h1>
                 <p class="price">$15.00</p>
                 <p>Some text about the jeans..</p>
@@ -89,21 +84,21 @@
         </div>
         <div class="row">
             <div class="card sweatshirts">
-                <img src="images/sw4.jpg">
+                <img src="images/Screenshot 2022-02-14 192434.jpg">
                 <h1>Hard Grey Sweat</h1>
                 <p class="price">$15.00</p>
                 <p>Some text about the jeans..</p>
                 <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="15.00">Add To Cart</a>
             </div>
             <div class="card sweatshirts">
-                <img src="images/sw5.jpg">
+                <img src="images/Screenshot 2022-02-14 192506.jpg">
                 <h1>Pastel Green Sweat</h1>
                 <p class="price">$15.00</p>
                 <p>Some text about the jeans..</p>
                 <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="15.00">Add To Cart</a>
             </div>
             <div class="card sweatshirts">
-                <img src="images/sw6.jpg">
+                <img src="images/Screenshot 2022-02-14 192525.jpg">
                 <h1>Chocolate Brown Sweat</h1>
                 <p class="price">$11.00</p>
                 <p>Some text about the jeans..</p>
@@ -330,7 +325,7 @@
                 </div>
 
                 <footer class="cd-cart__footer" style="height: auto;">
-                    <a href="cart.html" class="cd-cart__checkout">
+                    <a href="checkout.html" class="cd-cart__checkout">
                         <em>Checkout - $<span>0</span>
                             <svg class="icon icon--sm" viewBox="0 0 24 24">
                                 <g fill="none" stroke="currentColor">

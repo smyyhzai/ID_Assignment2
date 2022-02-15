@@ -1,6 +1,4 @@
 //responsive navbar
-
-
 $(document).ready(function() {
     $('.minus').click(function () {
         var $input = $(this).parent().find('input');
@@ -83,7 +81,7 @@ for (var i = 0; i < btns.length; i++) {
   });
 }
 
-/* -----adding to cart------*/
+// adding to cart
 $(function () {
   var goToCartIcon = function($addTocartBtn){
     var $cartIcon = $(".my-cart-icon");
@@ -121,3 +119,23 @@ $(function () {
   });
 
 });
+
+// slideshow gallery index.html
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
