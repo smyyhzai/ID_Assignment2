@@ -9,7 +9,7 @@ This is an e-commerce website that allows users to shop for clothings. They can 
 
 ## Design Process
 
--Our target audience are mostly teenagers who want to shop for clothes, and enjoy their shopping experience. The points that they collect encourages our customers to continue purchasing from our shop. This reward system is engaging and interactive, attracting more teenagers to shop from black tag.
+- Our target audience are mostly teenagers who want to shop for clothes, and enjoy their shopping experience. The points that they collect encourages our customers to continue purchasing from our shop. This reward system is engaging and interactive, attracting more teenagers to shop from black tag.
 
 ### User stories
 
@@ -20,8 +20,10 @@ This is an e-commerce website that allows users to shop for clothings. They can 
 ## Features
 
 - Navigation bar that sticks to the top at every page
+- Responsive website and usable on mobile
 
 Home page
+- Slideshow of clothes
 - Home page with categories of clothings available
 
 Product page
@@ -31,14 +33,19 @@ Product page
 - Add to cart allows users to add the products to their cart at the bottom right of the screen
 
  Checkout page (from the cart)
+- Billing address form and payment information
+
+ Checkout successful (from checkout page)
 - Allows users to checkout and leave a review of their shopping experience
+- Lottie animation used to show users that their order is shipping (animation of shipping)
 
 Rewards page
 - Allows users to collect points and view all rewards available
 - Every $10 spent should give 1 star
-- 5 stars can be exchanged for either a spin on the wheel or $10 off the next purchase
+- 5 stars can be exchanged for either a spin on the wheel or $5 off the next purchase
 - Spin the wheel will be in the reward page
-- Lottie animation while waiting for the wheel to spin
+- Spin the wheel rewards will include no reward, 5% discount, 10% discount, 20% discount, $2 off next purchase
+- Coupon will be added into the list of rewards
 
 Profile page
 - Profile page allows users to log in or create their own account using API and restDB
@@ -48,8 +55,9 @@ Profile page
 ### Existing Features
 
 ### Features Left to Implement
-- Cart and checkout page
-- Rewards page
+- Responsiveness
+- Cart and checkout at the product page
+- Rewards page and add it to navigation bar
 - Profile page
 ## Technologies Used
 
@@ -63,6 +71,10 @@ Profile page
 - [JQUERY](https://jquery.com)
 
 ## Testing
+Responsiveness
+- Ensure that flexboxes work and is displayed correctly by resizing the screen
+- Ensure the website works on mobile
+
 Navigation bar
 - Scroll down the page and ensure that the navigation bar sticks to the top
 
@@ -78,7 +90,7 @@ Reward page
 - Stars are deducted accordingly when used
 
 Profile page
-- At the log in page, the fields should not be blank when submitted
+- At the log in and sign up page, an error should popup if the fields are blank when submitted
 - Create an account and log in, users should be able to log in
 - Add items to your cart when logged in, users should be able to view the cart the next time they log in
 - Rewards should be saved as well
