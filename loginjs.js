@@ -28,10 +28,10 @@ var settings = {
       "async": true,
       "crossDomain": true,
       "url": "https://assignment2-53e4.restdb.io/rest/login",
-      "method": "GET", //[cher] we will use GET to retrieve info
+      "method": "GET", 
       "headers": {
         "content-type": "application/json",
-        "x-apikey": "61fe5e048d779a010001e9c8",
+        "x-apikey": "91106d4c1aa4d8af3203e28c331cea9d6e57a",
         "cache-control": "no-cache"
       },
     }
