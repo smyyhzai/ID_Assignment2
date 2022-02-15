@@ -179,6 +179,18 @@ span.psw {
   cursor: pointer;
 }
 
+.logo,
+.logo:hover {
+  list-style-type: none;
+  text-decoration: none;
+  color: white;
+  font-family: "Special Elite" cursive;
+  font-weight: 600;
+  font-size: 12px;
+  float: left;
+  margin: 15px 0 0 15px;
+}
+
 /* Add Zoom Animation */
 .animate {
   -webkit-animation: animatezoom 0.6s;
@@ -226,4 +238,45 @@ span.psw {
 }
 .profile-footer h4 {
   font-size: 15px;
+}
+
+.profile-body {
+  height: auto;
+  width: 100%;
+}
+.loginbutton {
+  height: auto;
+  margin: 10px;
+  display: inline-flex;
+}
+.loginbutton h3 {
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  margin: 10px;
+}
+
+.lgn {
+  flex: 30%;
+  width: 50%;
+  padding: 10px 30px;
+  font-family: "Outfit", sans-serif;
+  font-size: 15px;
+  margin: 20px;
+}
+
+.signupform {
+  margin: 20px;
+  height: auto;
+  color: white;
+  width: auto;
+  background-color: rgb(192, 161, 161);
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+.signupform h2 {
+  text-align: center;
+  font-family: "Outfit", sans-serif;
 }

@@ -139,3 +139,15 @@ function showDivs(n) {
   }
   x[slideIndex-1].style.display = "block";
 }
+
+//screen loader
+var myVar;
+
+function loadFunction() {
+  myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
