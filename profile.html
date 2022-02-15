@@ -9,7 +9,7 @@
 
   <link rel="stylesheet" href="login.css">
 
-  <script type="text/javascript" src="loginjs.js"></script>
+  <script type="text/javascript" src="login.js"></script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,15 +41,16 @@
       class="lgn">Login</button>
   </div>
 
+  <!--register-->
   <div class="signupform">
     <h2>Signup here</h2>
-    <label for="email"><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email" required>
-    <label for="uname"><b>Username</b></label>
-    <input type="text" id="name" placeholder="Enter Username" name="uname" required>
-    <label for="psw"><b>Password</b></label>
-    <input type="password" id="password" placeholder="Enter Password" name="psw" required>
-    <button type="submit" id="login-submit">Signup</button>
+    <label for="xEmail"><b>Email</b></label>
+    <input type="text" id="xEmail" placeholder="Enter Email" name="email" required>
+    <label for="xName"><b>Username</b></label>
+    <input type="text" id="xName" placeholder="Enter Username" name="uname" required>
+    <label for="xPassword"><b>Password</b></label>
+    <input type="text" id="xPassword" placeholder="Enter Password" name="psw" required>
+    <button type="submit" id="contact-submit">Signup</button>
     <label>
       <input type="checkbox" checked="checked" name="remember"> Remember me
     </label>
@@ -68,11 +69,11 @@
 
       <!--login-->
       <div class="container">
-        <label for="uname"><b>Username</b></label>
-        <input type="text" id="name" placeholder="Enter Username" name="uname" required>
+        <label><b>Username</b></label>
+        <input type="text" id="UserName" placeholder="Enter Username" name="uname" required>
 
-        <label for="psw"><b>Password</b></label>
-        <input type="password" id="password" placeholder="Enter Password" name="psw" required>
+        <label><b>Password</b></label>
+        <input type="text" id="Password" placeholder="Enter Password" name="psw" required>
 
         <button type="submit" id="login-submit">Login</button>
 

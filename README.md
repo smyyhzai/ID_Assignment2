@@ -19,16 +19,16 @@ This is an e-commerce website that allows users to shop for clothings. They can 
 
 ## Features
 
-- Navigation bar that sticks to the top at every page
+- Navigation bar that sticks to the top at every page✔️
 - Responsive website and usable on mobile
 
 Home page
-- Slideshow of clothes
-- Home page with categories of clothings available
+- Slideshow of clothes✔️
+- Home page with categories of clothings available✔️
 
 Product page
-- Product page shows all products available
-- Buttons to filter type of products
+- Product page shows all products available✔️
+- Buttons to filter type of products✔️
 - Search bar to filter products
 - Add to cart allows users to add the products to their cart at the bottom right of the screen
 
@@ -37,7 +37,7 @@ Product page
 
  Checkout successful (from checkout page)
 - Allows users to checkout and leave a review of their shopping experience
-- Lottie animation used to show users that their order is shipping (animation of shipping)
+- Lottie animation used to show users that their order is successful (animation of tick)✔️
 
 Rewards page
 - Allows users to collect points and view all rewards available
@@ -56,9 +56,11 @@ Profile page
 
 ### Features Left to Implement
 - Responsiveness
-- Cart and checkout at the product page
-- Rewards page and add it to navigation bar
-- Profile page
+- Cart not showing correctly when products are added
+- Reward page show total stars and coupons collected
+- Reward page api
+- Profile page api
+- Checkout page (cart.html) lottie not centre
 ## Technologies Used
 
 - [HTML](https://html.com)
