@@ -9,7 +9,7 @@
 
   <link rel="stylesheet" href="login.css">
 
-  <script type="text/javascript" src="login.js"></script>
+  <script type="text/javascript" src="loginjs.js"></script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,7 +22,7 @@
 
 </head>
 
-<body class="profile-body" style="height: 15%;">
+<body class="profile-body" style="height: 50%;">
   <header class="sub-header">
     <nav class="menu" id="navbar">
       <ul id="menu">
@@ -35,63 +35,9 @@
     </nav>
   </header>
 
-  <div class="loginbutton">
-    <h3>Already have an account?</h3>
-    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"
-      class="lgn">Login</button>
+  <div class="logreg">
+    <a href="logintest.html">Login/Register</a>
   </div>
-
-  <!--register-->
-  <div class="signupform">
-    <h2>Signup here</h2>
-    <label for="xEmail"><b>Email</b></label>
-    <input type="text" id="xEmail" placeholder="Enter Email" name="email" required>
-    <label for="xName"><b>Username</b></label>
-    <input type="text" id="xName" placeholder="Enter Username" name="uname" required>
-    <label for="xPassword"><b>Password</b></label>
-    <input type="text" id="xPassword" placeholder="Enter Password" name="psw" required>
-    <button type="submit" id="contact-submit">Signup</button>
-    <label>
-      <input type="checkbox" checked="checked" name="remember"> Remember me
-    </label>
-    <p>By creating an account you agree to our <a href="#" style="color:rgb(43, 94, 145)">Terms & Privacy</a>.</p>
-
-  </div>
-
-  <div id="id01" class="modal">
-
-    <form class="modal-content animate" action="/action_page.php" method="post">
-      <div class="imgcontainer">
-        <span onclick="document.getElementById('id01').style.display='none'" class="close"
-          title="Close Modal">&times;</span>
-        <img src="img_avatar2.png" alt="Avatar" class="avatar">
-      </div>
-
-      <!--login-->
-      <div class="container">
-        <label><b>Username</b></label>
-        <input type="text" id="UserName" placeholder="Enter Username" name="uname" required>
-
-        <label><b>Password</b></label>
-        <input type="text" id="Password" placeholder="Enter Password" name="psw" required>
-
-        <button type="submit" id="login-submit">Login</button>
-
-        <label>
-          <input type="checkbox" checked="checked" name="remember"> Remember me
-        </label>
-
-      </div>
-
-      <div class="container" style="background-color:#f1f1f1">
-        <button type="button" onclick="document.getElementById('id01').style.display='none'"
-          class="cancelbtn">Cancel</button>
-        <span class="psw">Forgot <a href="#">password?</a></span>
-      </div>
-    </form>
-  </div>
-
-
 
 
   <!----------------- footer ---------------->
@@ -99,6 +45,7 @@
     <h4>All Rights Reserved©</h4>
     <p>Made by gwen & sumo <br>Interactive Development Assignment 2, January 2022.</p>
   </section>
+
 </body>
 
 </html>

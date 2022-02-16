@@ -244,39 +244,29 @@ span.psw {
   height: auto;
   width: 100%;
 }
-.loginbutton {
+
+.logreg {
   height: auto;
-  margin: 10px;
-  display: inline-flex;
-}
-.loginbutton h3 {
   width: 100%;
-  text-align: center;
-  color: white;
-  font-weight: 600;
-  font-size: 15px;
-  margin: 10px;
+  display: flex;
+  align-items: center;
+  margin-right: 200px;
 }
 
-.lgn {
-  flex: 30%;
-  width: 50%;
-  padding: 10px 30px;
+.logreg a {
+  width: 25%;
+  text-align: center;
+  padding: 10px 20px;
   font-family: "Outfit", sans-serif;
   font-size: 15px;
-  margin: 20px;
-}
-
-.signupform {
-  margin: 20px;
-  height: auto;
   color: white;
-  width: auto;
+  text-decoration: none;
+  margin-bottom: 100px;
   background-color: rgb(192, 161, 161);
-  border-radius: 5px;
-  padding: 10px 15px;
+  border-radius: 8px;
 }
-.signupform h2 {
-  text-align: center;
-  font-family: "Outfit", sans-serif;
+
+.logreg a:hover {
+  color: white;
+  text-decoration: none;
 }

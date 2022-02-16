@@ -1,37 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="loginstyle.css">
+
 
     <title>Login</title>
 </head>
-<body>
+
+<body style="margin: 0;">
+
     <header>
-        <nav class = "navdesign">
-          <a href="index.html">Home</a>  
+        <nav class="navdesign">
+            <a style="text-decoration: none;" href="index.html">Home</a>
         </nav>
-        </header>
-    <div class ="login">
-        <form id= "login">
+    </header>
+
+    <div class="login">
+        <form id="login">
             <label>User Name</label>
-            <input type = "text" id="UserName" class="input-field" placeholder="UserName"required>
+            <input type="text" id="UserName" class="input-field" placeholder="UserName" required>
             <br><br>
             <label>Password</label>
-            <input type = "password" id="Password" class="input-field" placeholder="Password"required>
+            <input type="password" id="Password" class="input-field" placeholder="Password" required>
             <br><br>
-            <button type="submit" class="submit-btn">Login</button>
+            <button type="submit" class="submit-btn" href="index.html">Login</button>
             <br><br>
         </form>
-        <a href= "registertest.html"><button class ="r-btn">Register Now</button></a>
+        <a href="registertest.html"><button class="r-btn">Register Now</button></a>
     </div>
+
     <div id="loading">
-        <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_YMim6w.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_YMim6w.json" background="transparent"
+            speed="1" style="width: 300px; height: 300px;" autoplay></lottie-player>
     </div>
+
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src = "script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
