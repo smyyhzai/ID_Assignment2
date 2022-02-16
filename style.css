@@ -197,12 +197,17 @@ body {
 }
 
 @media (max-width: 800px) {
-  .category {
-    margin: auto;
-    flex: 100%;
-  }
   .menu {
     margin: auto;
+    width: 100%;
+  }
+  .category,
+  .category img,
+  .layer {
+    margin: 0;
+    width: 400px;
+    height: 200px;
+    padding: 0;
   }
 
   .text-box h1 {
@@ -210,7 +215,7 @@ body {
   }
   .exp {
     position: absolute;
-    margin-left: 200px;
+    margin-left: 120px;
   }
 }
 
