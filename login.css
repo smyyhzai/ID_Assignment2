@@ -249,8 +249,10 @@ span.psw {
   height: auto;
   width: 100%;
   display: flex;
-  align-items: center;
-  margin-right: 200px;
+  align-self: center;
+  position: absolute;
+  margin-top: -100px;
+  margin-left: 460px;
 }
 
 .logreg a {
@@ -269,4 +271,11 @@ span.psw {
 .logreg a:hover {
   color: white;
   text-decoration: none;
+}
+
+@media (max-width: 800px) {
+  .logreg {
+    position: absolute;
+    margin-left: 250px;
+  }
 }

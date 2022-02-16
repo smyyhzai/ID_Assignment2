@@ -84,13 +84,12 @@ body {
 }
 
 .text-box {
-  width: 90%;
+  width: 50%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   height: auto;
-  width: 50%;
   background-color: rgba(0, 0, 0, 0.455);
   border-style: solid;
   border-color: white;
@@ -112,27 +111,32 @@ body {
 }
 
 .exp {
-  width: 100%;
-  height: 10%;
   display: flex;
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-self: center;
+  position: absolute;
+  margin-top: 500px;
+  margin-left: 500px;
 }
 
 .expbtn {
-  height: 0;
-  width: 26%;
-  color: white;
-  padding: 20px;
+  width: 30%;
+  color: black;
+  background-color: white;
   text-align: center;
-  border-style: solid;
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  border: 5px solid;
   border-color: white;
-  flex: 10%;
-  margin-top: -120px;
-  text-align: center;
+  text-decoration: none;
 }
 
 .expbtn:hover {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 .mini-nav {
@@ -205,6 +209,10 @@ body {
   .text-box h1 {
     font-size: 50px;
   }
+  .exp {
+    position: absolute;
+    margin-left: 200px;
+  }
 }
 
 /*--------PRODUCT PAGE-------*/
@@ -220,16 +228,25 @@ body {
 
 .btn-container {
   display: flex;
-  height: 0;
+  height: 15%;
+  width: 100%;
+  display: flex;
+  align-self: center;
 }
+
 #shopnow {
+  margin-top: 500px;
+  width: 50%;
+  color: #000;
   text-align: center;
   font-family: "Outfit", sans-serif;
   font-weight: 600;
   font-size: 15px;
   border-style: solid;
   border-color: white;
+  text-decoration: none;
 }
+
 .section2 {
   height: auto;
 }

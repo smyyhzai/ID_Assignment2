@@ -42,11 +42,13 @@
                 <li><a href="profile.html"><i class="fas fa-user"></i></a></li>
             </ul>
         </nav>
+
+        <div class="btn-container">
+            <a href="#return" class="topbtn" id="shopnow">SHOP NOW</a>
+        </div>
     </header>
 
-    <div class="btn-container">
-        <a href="#return" class="expbtn" id="shopnow">SHOP NOW</a>
-    </div>
+
 
     <div class="section2" id="return">
         <div class="container2">
@@ -56,6 +58,7 @@
                 <button onclick="filterSelection('sweatshirts')"> Sweatshirts</button>
                 <button onclick="filterSelection('tops')"> Tops</button>
                 <button onclick="filterSelection('bottoms')"> Bottoms</button>
+                <button onclick="filterSelection('shoes')"> Shoes</button>
             </nav>
         </div>
 
@@ -295,6 +298,31 @@
                 <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="6.50">Add To Cart</a>
             </div>
         </div>
+        <div class="row">
+            <div class="card shoes">
+                <div class="product1">
+                    <img src="images/shoes2.jpg" class="prod-image">
+                    <h1>Pink Low Cut Shoes</h1>
+                    <p class="price">$22.00</p>
+                    <p class="cd-cart__details">Some text about the jeans..</p>
+                    <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="22.00">Add To Cart</a>
+                </div>
+            </div>
+            <div class="card shoes">
+                <img src="images/shoes3.jpg" class="cd-cart__image">
+                <h1>White Chunky Sneakers</h1>
+                <p class="price">$26.00</p>
+                <p>Some text about the jeans..</p>
+                <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="26.00">Add To Cart</a>
+            </div>
+            <div class="card shoes">
+                <img src="images/shoes4.jpg">
+                <h1>B&W High Cut</h1>
+                <p class="price">$25.00</p>
+                <p>Some text about the jeans..</p>
+                <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="25.00">Add To Cart</a>
+            </div>
+        </div>
         <div class="btn-container" style="height: auto;">
             <button class="topbtn">
                 <a href="#return">Back to Top</a>
@@ -302,6 +330,7 @@
         </div>
     </div>
 
+    <!-- cart -->
     <div class="cd-cart cd-cart--empty js-cd-cart" style="margin: 0;">
         <a href="#0" class="cd-cart__trigger text-replace" style="margin: 0;">
             Cart
