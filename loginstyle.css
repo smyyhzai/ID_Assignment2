@@ -94,3 +94,18 @@ label {
 .navdesign a:hover {
   text-decoration: none;
 }
+
+@media (max-width: 800px) {
+  .login,
+  .form {
+    width: auto;
+    padding: 15px;
+    margin: 0px;
+    border-radius: 0;
+  }
+  .container {
+    width: auto;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
