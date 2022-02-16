@@ -3206,7 +3206,7 @@ mark {
   transform: translateY(-50%) translateX(-50%);
   height: 100%;
   width: 100%;
-  background: url(../img/cd-icons-cart-close.svg) no-repeat 0 0;
+  background: url(cd-icons-cart-close.svg) no-repeat 0 0;
   transition: opacity 0.2s, -webkit-transform 0.2s;
   transition: opacity 0.2s, transform 0.2s;
   transition: opacity 0.2s, transform 0.2s, -webkit-transform 0.2s;
@@ -3866,6 +3866,7 @@ mark {
 body {
   background-color: hsl(192, 15%, 94%);
   background-color: var(--cd-color-4);
+  font-size: 13px;
 }
 .cd-main h1 {
   color: hsl(210, 31%, 24%);
@@ -3974,4 +3975,11 @@ body {
 .topbtn a:link,
 a:visited {
   text-decoration: none;
+}
+.cd-cart__checkout {
+  background-color: rgb(122, 87, 87);
+  font-size: 13px;
+}
+.cd-cart__checkout:hover {
+  background-color: rgb(197, 164, 164);
 }

@@ -10,7 +10,7 @@
             cartCount = cart[0].getElementsByClassName('cd-cart__count')[0],
             cartCountItems = cartCount.getElementsByTagName('li'),
             cartUndo = cart[0].getElementsByClassName('cd-cart__undo')[0],
-            productId = 0, //this is a placeholder -> use your real product ids instead
+            productId = document.getElementById('productId'), //this is a placeholder -> use your real product ids instead
             cartTimeoutId = false,
             animatingQuantity = false;
           initCartEvents();
@@ -94,18 +94,28 @@
                   Util.addClass(cart[0], 'cd-cart--open');
               }
           };
-  
+
+          //pic = document.getElementById("prodimg").value = document.getElementById("prodimg").innerHTML
+          //pic = document.getElementsByClassId("cd-cart__image").value = document.getElementById("prodimg").innerHTML;
+
+          //price = document.getElementById('price');
+          //prodname = document.getElementById('productname');
+          //pic = document.getElementById('prodimg');
+
           function addProduct(target) {
 			// this is just a product placeholder
 			// you should insert an item with the selected product info
 			// replace productId, productName, price and url with your real product info
 			// you should also check if the product was already in the cart -> if it is, just update the quantity
 			productId = productId + 1;
-			var productAdded = '<li class="cd-cart__product"><div class="cd-cart__image"><a href="#0"><img src="assets/img/product-preview.png" alt="placeholder"></a></div><div class="cd-cart__details"><h3 class="truncate"><a href="#0">Product Name</a></h3><span class="cd-cart__price">$25.99</span><div class="cd-cart__actions"><a href="#0" class="cd-cart__delete-item">Delete</a><div class="cd-cart__quantity"><label for="cd-product-'+ productId +'">Qty</label><span class="cd-cart__select"><select class="reset" id="cd-product-'+ productId +'" name="quantity"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option></select><svg class="icon" viewBox="0 0 12 12"><polyline fill="none" stroke="currentColor" points="2,4 6,8 10,4 "/></svg></span></div></div></div></li>';
+			var productAdded = '<li class="cd-cart__product"><div class="cd-cart__image"><a href="#0"><img src="product-preview.png" alt="placeholder"></a></div><div class="cd-cart__details"><h3 class="truncate"><a href="#0">Product Name sweater 1</a></h3><span class="cd-cart__price">$10.00</span><div class="cd-cart__actions"><a href="#0" class="cd-cart__delete-item">Delete</a><div class="cd-cart__quantity"><label for="cd-product-'+ productId +'">Qty</label><span class="cd-cart__select"><select class="reset" id="cd-product-'+ productId +'" name="quantity"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option></select><svg class="icon" viewBox="0 0 12 12"><polyline fill="none" stroke="currentColor" points="2,4 6,8 10,4 "/></svg></span></div></div></div></li>';
+
+            //var productAdded = '<li class="cd-cart__product"><div class="cd-cart__image"><a href="#0"><img src="images/Screenshot 2022-02-07 120040.jpg"></a></div><div class="cd-cart__details"><h3 class="truncate"><a href="#0">Product Name</a></h3><span class="cd-cart__price">$25.99</span><div class="cd-cart__actions"><a href="#0" class="cd-cart__delete-item">Delete</a><div class="cd-cart__quantity"><label for="cd-product-'+ 1 +'">Qty</label><span class="cd-cart__select"><select class="reset" id="cd-product-'+ 1 +'" name="quantity"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option></select><svg class="icon" viewBox="0 0 12 12"><polyline fill="none" stroke="currentColor" points="2,4 6,8 10,4 "/></svg></span></div></div></div></li>';
+            //var productAdded = '<li class="cd-cart__product"><div class="cd-cart__image"><a href="#0"><img src="images/Screenshot 2022-02-07 120055.jpg"</a></div><div class="cd-cart__details"><h3 class="truncate"><a href="#0">Product Name</a></h3><span class="cd-cart__price">$25.99</span><div class="cd-cart__actions"><a href="#0" class="cd-cart__delete-item">Delete</a><div class="cd-cart__quantity"><label for="cd-product-'+ 2 +'">Qty</label><span class="cd-cart__select"><select class="reset" id="cd-product-'+ 2 +'" name="quantity"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option></select><svg class="icon" viewBox="0 0 12 12"><polyline fill="none" stroke="currentColor" points="2,4 6,8 10,4 "/></svg></span></div></div></div></li>';
+
+			//var productAdded = '<li class="cd-cart__product"><div class="cd-cart__image"><a href="#0">'+ pic +'</a></div><div class="cd-cart__details"><h3 class="truncate"><a href="#0">'+ prodname +'</a></h3><span class="cd-cart__price">'+ price +'</span><div class="cd-cart__actions"><a href="#0" class="cd-cart__delete-item">Delete</a><div class="cd-cart__quantity"><label for="cd-product-'+ productId +'">Qty</label><span class="cd-cart__select"><select class="reset" id="cd-product-'+ productId +'" name="quantity"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option></select><svg class="icon" viewBox="0 0 12 12"><polyline fill="none" stroke="currentColor" points="2,4 6,8 10,4 "/></svg></span></div></div></div></li>';
 			cartList.insertAdjacentHTML('beforeend', productAdded);
 		};
-
-
   
           function removeProduct(product) {
               if(cartTimeoutId) clearInterval(cartTimeoutId);
