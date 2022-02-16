@@ -404,11 +404,9 @@ input {
 }
 
 .animation {
-  width: 100px;
-  height: 100px;
-  margin: 30px;
-  display: flex;
-  align-items: center;
+  height: auto;
+  width: 100%;
+  padding: 10px;
 }
 
 /* 5 star rating */
@@ -470,6 +468,7 @@ input {
 }
 
 .contbtn {
+  height: 100%;
   flex: 20%;
   text-decoration: none;
   text-align: center;
