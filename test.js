@@ -225,12 +225,31 @@ $(document).ready(function () {
             alert("Invalid Username Or Password!");
             location.href="login.html";
           }
+        
         });
+        if (login == true) {;          
+            document.getElementById("build").onclick = function() {
+                location.href='rewards.html';
+            }
+        }
+        else if (login == false) {;
+           document.getElementById("build").onclick = function() {
+               location.href='product.html';
+           }
+        }
       }
     })
-  function myFunction3() {
-    document.getElementById("demo").innerHTML = "Hello Dear Visitor! Thank you for sending the email I wil get back to you shortly </br>"
-  }
-  function sendEmail() {
-    window.location = "mailto:BetaID.NP@gmail.com?subject=Important! From Music website";
-  }
+function login(login){
+
+
+    if (login.value = true) {;          
+        document.getElementById("build").onclick = function() {
+            location.href='index.html';
+        }
+    }
+    else if (login.value = false) {;
+       document.getElementById("build").onclick = function() {
+           location.href='product.html';
+       }
+    }
+}
