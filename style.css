@@ -17,7 +17,7 @@ body {
   background-size: cover;
   background-position: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-    url("street.gif");
+    url("/images/gallery0.jpg");
 }
 
 .main-header img {
@@ -388,10 +388,6 @@ a:visited {
   border-radius: 5px;
   text-align: center;
   font-size: 15px;
-}
-.total-count {
-  font-weight: bolder;
-  color: black;
 }
 
 .delete-item {

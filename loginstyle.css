@@ -95,6 +95,12 @@ label {
   text-decoration: none;
 }
 
+#loading {
+  position: absolute;
+  top: 60%;
+  left: 40%;
+}
+
 @media (max-width: 800px) {
   .login,
   .form {
@@ -107,5 +113,10 @@ label {
     width: auto;
     display: flex;
     flex-wrap: nowrap;
+  }
+  #loading {
+    position: absolute;
+    top: 50%;
+    left: 30%;
   }
 }
