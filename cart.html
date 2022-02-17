@@ -9,7 +9,7 @@
 
 
     <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="cart.js"></script>
+    <script type="text/javascript" src="script.js"></script>
 
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
         rel="stylesheet">
@@ -53,8 +53,11 @@
 
         <!--star rating-->
         <div class="star-rating">
-            <div class="rate">
-                <h3>Leave a star review</h3>
+            <a href="#rate">
+                <h3>Leave a review!</h3>
+            </a>
+            <p>We value your feedback on our services</p>
+            <div class="rate" id="rate">
                 <input type="radio" id="star5" name="rate" value="5" />
                 <label for="star5" title="text">5 stars</label>
                 <input type="radio" id="star4" name="rate" value="4" />
@@ -67,6 +70,17 @@
                 <label for="star1" title="text">1 star</label>
             </div>
         </div>
+
+        <div class="comment-box">
+            <h3>Leave a comment</h3>
+            <form class="comment-form" id='form1' action="/action_page.php">
+                <input type="text" placeholder="Enter Name">
+                <input type="email" placeholder="Enter Email">
+                <textarea rows="5" placeholder="Your comment"></textarea>
+                <button type="submit" class="btn" onclick="alertFunction()">POST COMMENT</button>
+            </form>
+        </div>
+
         <div class="mini-btn">
             <a href="product.html" class="contbtn">Continue Shopping</a>
             <a href="index.html" class="contbtn">Back to Home</a>

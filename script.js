@@ -151,3 +151,8 @@ function showPage() {
   document.getElementById("loader").style.display = "none";
   document.getElementById("myDiv").style.display = "block";
 }
+
+//form response alert
+function alertFunction(){
+  alert("Comment submitted successfully. Thank you! ");
+}

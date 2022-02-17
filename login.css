@@ -51,12 +51,6 @@
   color: rgb(243, 237, 237);
 }
 
-.menu ul li a:hover {
-  text-decoration: none;
-  padding: 5px 10px;
-  transition: 0.45s ease-in-out;
-}
-
 .lgn {
   padding: 8px 10px;
   font-size: 10px;
