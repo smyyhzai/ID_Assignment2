@@ -226,11 +226,16 @@ body {
   background-size: contain;
   background-position: center;
   object-fit: contain;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-    url("/images/2.png");
+}
+.productvid {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 26%;
 }
 
 .btn-container {
+  position: relative;
   display: flex;
   height: 15%;
   width: 100%;
@@ -380,6 +385,12 @@ input {
   overflow: hidden;
 }
 
+@media (max-width: 800px) {
+  .productvid {
+    position: absolute;
+    left: 5%;
+  }
+}
 /*----------PROFILE PAGE---------- */
 
 /* Style the buttons */
