@@ -23,23 +23,28 @@ This is an e-commerce website that allows users to shop for clothings. They can 
 - Responsive website and usable on mobile
 
 Home page
+
 - Slideshow of clothes✔️
 - Home page with categories of clothings available✔️
 
 Product page
+
 - Product page shows all products available✔️
 - Buttons to filter type of products✔️
 - Search bar to filter products
 - Add to cart allows users to add the products to their cart at the bottom right of the screen
 
- Checkout page (from the cart)
-- Billing address form and payment information
+Checkout page (from the cart)
 
- Checkout successful (from checkout page)
-- Allows users to checkout and leave a review of their shopping experience
+- Billing address form and payment information ✔️
+
+Checkout successful (from checkout page)
+
+- Allows users to checkout and leave a review of their shopping experience ✔️
 - Lottie animation used to show users that their order is successful (animation of tick)✔️
 
 Rewards page
+
 - Allows users to collect points and view all rewards available
 - Every $10 spent should give 1 star
 - 5 stars can be exchanged for either a spin on the wheel or $5 off the next purchase
@@ -48,6 +53,7 @@ Rewards page
 - Coupon will be added into the list of rewards
 
 Profile page
+
 - Profile page allows users to log in or create their own account using API and restDB
 - Users' cart will be saved if they have an account
 - View all orders placed previously, as well as the status of their order
@@ -55,12 +61,14 @@ Profile page
 ### Existing Features
 
 ### Features Left to Implement
+
 - Responsiveness
 - Cart not showing correctly when products are added
 - Reward page show total stars and coupons collected
 - Reward page api
 - Profile page api
 - Checkout page (cart.html) lottie not centre
+
 ## Technologies Used
 
 - [HTML](https://html.com)
@@ -73,14 +81,18 @@ Profile page
 - [JQUERY](https://jquery.com)
 
 ## Testing
+
 Responsiveness
+
 - Ensure that flexboxes work and is displayed correctly by resizing the screen
 - Ensure the website works on mobile
 
 Navigation bar
+
 - Scroll down the page and ensure that the navigation bar sticks to the top
 
 Product page
+
 - Product page should show all products when first entered
 - Click "Sweatshirts" to filter products and show sweatshirts only etc.
 - Add a product to the cart and the cart should display the product and the correct price
@@ -88,21 +100,26 @@ Product page
 - Checkout should lead you to the review page
 
 Reward page
-- Rewards should be issued once they reach a certain spending 
+
+- Rewards should be issued once they reach a certain spending
 - Stars are deducted accordingly when used
 
 Profile page
+
 - At the log in and sign up page, an error should popup if the fields are blank when submitted
 - Create an account and log in, users should be able to log in
 - Add items to your cart when logged in, users should be able to view the cart the next time they log in
 - Rewards should be saved as well
 - They should be able to view their order history
+
 ## Credits
 
 ### Content
 
 ### Media
+
 - Images are taken from pinterest and shein
+
 ### Acknowledgements
 
 - I received inspiration for this project from mr peter hung.

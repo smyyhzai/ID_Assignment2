@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
     <script>document.getElementsByTagName("html")[0].className += " js";</script>
-    <link rel="stylesheet" href="stylecart.css">
     <link rel="stylesheet" href="style.css">
 
 
@@ -24,7 +23,6 @@
         href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,400;1,800&family=Special+Elite&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/c75c699b1a.js" crossorigin="anonymous"></script>
-
     <title>Products</title>
 
 </head>
@@ -38,11 +36,22 @@
                 <li><a href="product.html"><i class="fas fa-tshirt"></i></a></li>
                 <li><a href="rewards.html"><i class="fas fa-star"></i></a></li>
                 <li><a href="profile.html"><i class="fas fa-user"></i></a></li>
+                <nav class="navbar navbar-inverse bg-inverse fixed-top bg-faded" id="cartnav">
+                    <div class="row" id="cart-counter">
+                        <div class="col">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart"
+                                style="color: black; background-color: rgb(223, 196, 196); height: auto;">
+                                🛒 | <span class="total-count"></span></button><button class="clear-cart btn btn-danger"
+                                style="color: black; background-color: rgb(224, 99, 99); height: auto;">Clear
+                                Cart</button>
+                        </div>
+                    </div>
+                </nav>
             </ul>
         </nav>
         <div class="productvid">
             <video width="650" height="400" autoplay>
-                <source src="Black tag (2).mp4" type="video/mp4">
+                <source src="Black tag (3).mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
@@ -65,315 +74,416 @@
         </div>
 
         <div class="row">
-            <div class="card sweatshirts" id="productId" productId="1">
-                <img src="images/Screenshot 2022-02-07 120040.jpg" id="prodimg">
-                <h1 id="prodname">Hoodie Human Series: Black</h1>
-                <p class="price" id="price" price="10.00">$10.00</p>
-                <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="10.00"
-                    data-name="Hoodie Human Series: Black">Add To Cart</a>
-            </div>
-            <div class="card sweatshirts" id="productId" productId="2">
-                <img src="images/Screenshot 2022-02-07 120055.jpg" id="prodimg">
-                <h1 id="prodname">Hoodie Human Series: Green</h1>
-                <p class="price" id="price" price="10.00">$10.00</p>
+            <div class="card sweatshirts">
+                <img class="card-img-top" src="images/Screenshot 2022-02-07 120040.jpg">
+                <div class="card-block">
+                    <h1 class="card-title">Hoodie Human Series: Black</h1>
+                    <p class="card-text price">$10.00</p>
+                    <a href="#" data-name="Hoodie Human Series: Black" data-price="10.00"
+                        class="add-to-cart btn btn-primary"
+                        style="color: white; background-color: black;width: 80%;">Add to
+                        cart</a>
+                </div>
 
-                <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="10.00"
-                    data-name="Hoodie Human Series: Green">Add To Cart</a>
             </div>
             <div class="card sweatshirts">
-                <img src="images/Screenshot 2022-02-07 120019.jpg">
-                <h1>Hoodie Human Series: White</h1>
-                <p class="price">$15.00</p>
-
-                <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="15.00">Add To Cart</a>
+                <img class="card-img-top" src="images/Screenshot 2022-02-07 120055.jpg" id="prodimg">
+                <div class="card-block">
+                    <h1 class="card-title">Hoodie Human Series: Green</h1>
+                    <p class="card-text price">$10.00</p>
+                    <a href="#" data-name="Hoodie Human Series: Green" data-price="10.00"
+                        class="add-to-cart btn btn-primary"
+                        style="color: white; background-color: black;width: 80%;">Add to
+                        cart</a>
+                </div>
             </div>
+
+            <div class="card sweatshirts">
+                <img class="card-img-top" src="images/Screenshot 2022-02-07 120019.jpg">
+                <div class="card-block">
+                    <h1 class="card-title">Hoodie Human Series: White</h1>
+                    <p class="card-text price">$15.00</p>
+                    <a href="#" data-name="Hoodie Human Series: White" data-price="15.00"
+                        class="add-to-cart btn btn-primary"
+                        style="color: white; background-color: black;width: 80%;">Add to
+                        cart</a>
+                </div>
+
+            </div>
+
         </div>
         <div class="row">
             <div class="card sweatshirts">
-                <img src="images/Screenshot 2022-02-14 192434.jpg">
-                <h1>Butterfly Beige Sweats</h1>
-                <p class="price">$15.00</p>
+                <img class="card-img-top" src="images/Screenshot 2022-02-14 192434.jpg">
+                <div class="card-block">
+                    <h1 class="card-title">Butterfly Beige Sweats</h1>
+                    <p class="card-text price">$15.00</p>
+                    <a href="#" data-name="Butterfly Beige Sweats" data-price="15.00"
+                        class="add-to-cart btn btn-primary"
+                        style="color: white; background-color: black;width: 80%;">Add to
+                        cart</a>
+                </div>
 
-                <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="15.00">Add To Cart</a>
             </div>
             <div class="card sweatshirts">
-                <img src="images/Screenshot 2022-02-14 192506.jpg">
-                <h1>Blue Smiles Sweats</h1>
-                <p class="price">$15.00</p>
-
-                <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="15.00">Add To Cart</a>
+                <img class="card-img-top" src="images/Screenshot 2022-02-14 192506.jpg">
+                <div class="card-block">
+                    <h1 class="card-title">Blue Smiles Sweats</h1>
+                    <p class="card-text price">$15.00</p>
+                    <a href="#" data-name="Blue Smiles Sweats" data-price="15.00" class="add-to-cart btn btn-primary"
+                        style="color: white; background-color: black;width:80%;">Add to
+                        cart</a>
+                </div>
             </div>
             <div class="card sweatshirts">
-                <img src="images/Screenshot 2022-02-14 192525.jpg">
-                <h1>Monochrome Graphic Sweats</h1>
-                <p class="price">$11.00</p>
-
-                <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="11.00">Add To Cart</a>
+                <img class="card-img-top" src="images/Screenshot 2022-02-14 192525.jpg">
+                <div class="card-block">
+                    <h1 class="card-title">Mono Graphic Sweats</h1>
+                    <p class="card-text price">$11.00</p>
+                    <a href="#" data-name="Mono Graphic Sweats" data-price="11.00" class="add-to-cart btn btn-primary"
+                        style="color: white; background-color: black;width: 80%;">Add to
+                        cart</a>
+                </div>
             </div>
         </div>
 
         <div class="row">
             <div class="card tops">
-                <img src="images/1.jpg">
-                <h1>Super City Tee</h1>
-                <p class="price">$10.00</p>
-
-                <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="10.00">Add To Cart</a>
+                <img class="card-img-top" src="images/1.jpg">
+                <div class="card-block">
+                    <h1 class="card-title">Super City Tee</h1>
+                    <p class="card-text price">$10.00</p>
+                    <a href="#" data-name="Super City Tee" data-price="10.00" class="add-to-cart btn btn-primary"
+                        style="color: white; background-color: black;width: 80%;">Add to
+                        cart</a>
+                </div>
             </div>
-            <div class="card tops">
-                <img src="images/2.jpg">
-                <h1>Cloud Tee</h1>
-                <p class="price">$10.00</p>
 
-                <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="10.00">Add To Cart</a>
+            <div class="card tops">
+                <img class="card-img-top" src="images/2.jpg">
+                <div class="card-block">
+                    <h1 class="card-title">Cloud Tee</h1>
+                    <p class="card-text price">$10.00</p>
+                    <a href="#" data-name="Cloud Tee" data-price="10.00" class="add-to-cart btn btn-primary"
+                        style="color: white; background-color: black;width: 80%;">Add to
+                        cart</a>
+                </div>
             </div>
-            <div class="card tops">
-                <img src="images/3.jpg">
-                <h1>Butterfly Tee</h1>
-                <p class="price">$10.00</p>
 
-                <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="10.00">Add To Cart</a>
-            </div>
-        </div>
-        <div class="row">
             <div class="card tops">
-                <img src="images/4.jpg">
-                <h1>23 Tee</h1>
-                <p class="price">$10.00</p>
-
-                <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="10.00">Add To Cart</a>
-            </div>
-            <div class="card tops">
-                <img src="images/5.jpg">
-                <h1>Skeleton Tee</h1>
-                <p class="price">$10.00</p>
-
-                <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="10.00">Add To Cart</a>
-            </div>
-            <div class="card tops">
-                <img src="images/6.jpg">
-                <h1>Off Mind Tee</h1>
-                <p class="price">$10.00</p>
-
-                <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="10.00">Add To Cart</a>
+                <img class="card-img-top" src="images/3.jpg">
+                <div class="card-block">
+                    <h1 class="card-title">Butterfly Tee</h1>
+                    <p class="card-text price">$10.00</p>
+                    <a href="#" data-name="Cloud Tee" data-price="10.00" class="add-to-cart btn btn-primary"
+                        style="color: white; background-color: black;width: 80%;">Add to
+                        cart</a>
+                </div>
             </div>
         </div>
 
         <div class="row">
             <div class="card tops">
-                <img src="images/13.jpg">
-                <h1>Space Tee</h1>
-                <p class="price">$10.00</p>
-
-                <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="10.00">Add To Cart</a>
+                <img class="card-img-top" src="images/4.jpg">
+                <div class="card-block">
+                    <h1 class="card-title">23 Tee</h1>
+                    <p class="card-text price">$10.00</p>
+                    <a href="#" data-name="23 Tee" data-price="10.00" class="add-to-cart btn btn-primary"
+                        style="color: white; background-color: black;width: 80%;">Add to
+                        cart</a>
+                </div>
             </div>
-            <div class="card tops">
-                <img src="images/8.jpg">
-                <h1>Future Robots Tee</h1>
-                <p class="price">$10.00</p>
 
-                <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="10.00">Add To Cart</a>
+            <div class="card tops">
+                <img class="card-img-top" src="images/5.jpg">
+                <div class="card-block">
+                    <h1 class="card-title">Skeleton Tee</h1>
+                    <p class="card-text price">$10.00</p>
+                    <a href="#" data-name="Skeleton Tee" data-price="10.00" class="add-to-cart btn btn-primary"
+                        style="color: white; background-color: black;width: 80%;">Add to
+                        cart</a>
+                </div>
             </div>
-            <div class="card tops">
-                <img src="images/9.jpg">
-                <h1>Natural Tee</h1>
-                <p class="price">$10.00</p>
 
-                <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="10.00">Add To Cart</a>
-            </div>
-        </div>
-        <div class="row">
             <div class="card tops">
-                <img src="images/10.jpg">
-                <h1>Lost Mind Tee</h1>
-                <p class="price">$10.00</p>
-
-                <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="10.00">Add To Cart</a>
-            </div>
-            <div class="card tops">
-                <img src="images/11.jpg">
-                <h1>Bring Tee</h1>
-                <p class="price">$10.00</p>
-
-                <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="10.00">Add To Cart</a>
-            </div>
-            <div class="card tops">
-                <img src="images/12.jpg">
-                <h1>Heart Tee</h1>
-                <p class="price">$10.00</p>
-
-                <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="10.00">Add To Cart</a>
+                <img class="card-img-top" src="images/6.jpg">
+                <div class="card-block">
+                    <h1 class="card-title">Off Mind Tee</h1>
+                    <p class="card-text price">$10.00</p>
+                    <a href="#" data-name="Off Mind Tee" data-price="10.00" class="add-to-cart btn btn-primary"
+                        style="color: white; background-color: black;width: 80%;">Add to
+                        cart</a>
+                </div>
             </div>
         </div>
 
         <div class="row">
-            <div class="card bottoms">
-                <img src="images/b1.jpg">
-                <h1>Space Grey Pants</h1>
-                <p class="price">$12.00</p>
+            <div class="card tops">
+                <img class="card-img-top" src="images/13.jpg">
+                <div class="card-block">
+                    <h1 class="card-title">Space Tee</h1>
+                    <p class="card-text price">$10.00</p>
+                    <a href="#" data-name="Space Tee" data-price="10.00" class="add-to-cart btn btn-primary"
+                        style="color: white; background-color: black;width: 80%;">Add to
+                        cart</a>
+                </div>
 
-                <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="12.00">Add To Cart</a>
             </div>
-            <div class="card bottoms">
-                <img src="images/b2.jpg">
-                <h1>Beige Shorts</h1>
-                <p class="price">$7.00</p>
-
-                <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="7.00">Add To Cart</a>
+            <div class="card tops">
+                <img class="card-img-top" src="images/8.jpg">
+                <div class="card-block">
+                    <h1 class="card-title">Future Robots Tee</h1>
+                    <p class="card-text price">$10.00</p>
+                    <a href="#" data-name="Fututre Robots Tee" data-price="10.00" class="add-to-cart btn btn-primary"
+                        style="color: white; background-color: black;width: 80%;">Add to
+                        cart</a>
+                </div>
             </div>
-            <div class="card bottoms">
-                <img src="images/b5.jpg">
-                <h1>North Shorts</h1>
-                <p class="price">$7.50</p>
 
-                <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="7.50">Add To Cart</a>
-            </div>
-        </div>
-        <div class="row">
-            <div class="card bottoms">
-                <img src="images/b3.jpg">
-                <h1>Checkered Pants</h1>
-                <p class="price">$11.00</p>
+            <div class="card tops">
+                <img class="card-img-top" src="images/9.jpg">
+                <div class="card-block">
+                    <h1 class="card-title">Natural Tee</h1>
+                    <p class="card-text price">$10.00</p>
+                    <a href="#" data-name="Natural Tee" data-price="10.00" class="add-to-cart btn btn-primary"
+                        style="color: white; background-color: black;width: 80%;">Add to
+                        cart</a>
+                </div>
 
-                <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="11.00">Add To Cart</a>
-            </div>
-            <div class="card bottoms">
-                <img src="images/b4.jpg">
-                <h1>Basic Black Pants</h1>
-                <p class="price">$11.00</p>
-
-                <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="11.00">Add To Cart</a>
-            </div>
-            <div class="card bottoms">
-                <img src="images/b6.jpg">
-                <h1>L.A Shorts</h1>
-                <p class="price">$6.90</p>
-
-                <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="6.90">Add To Cart</a>
             </div>
         </div>
         <div class="row">
-            <div class="card bottoms">
-                <img src="images/b7.jpg">
-                <h1>Original Shorts</h1>
-                <p class="price">$6.50</p>
-
-                <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="6.50">Add To Cart</a>
+            <div class="card tops">
+                <img class="card-img-top" src="images/10.jpg">
+                <div class="card-block">
+                    <h1 class="card-title">Lost Mind Tee</h1>
+                    <p class="card-text price">$10.00</p>
+                    <a href="#" data-name="Lost Mind Tee" data-price="10.00" class="add-to-cart btn btn-primary"
+                        style="color: white; background-color: black;width: 80%;">Add to
+                        cart</a>
+                </div>
             </div>
-            <div class="card bottoms">
-                <img src="images/b8.jpg">
-                <h1>Rainbow Shorts</h1>
-                <p class="price">$6.50</p>
-
-                <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="6.50">Add To Cart</a>
+            <div class="card tops">
+                <img class="card-img-top" src="images/11.jpg">
+                <div class="card-block">
+                    <h1 class="card-title">Bring Tee</h1>
+                    <p class="card-text price">$10.00</p>
+                    <a href="#" data-name="Bring Tee" data-price="10.00" class="add-to-cart btn btn-primary"
+                        style="color: white; background-color: black;width: 80%;">Add to
+                        cart</a>
+                </div>
             </div>
-            <div class="card bottoms">
-                <img src="images/b9.jpg">
-                <h1>Real Shorts</h1>
-                <p class="price">$6.50</p>
-
-                <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="6.50">Add To Cart</a>
+            <div class="card tops">
+                <img class="card-img-top" src="images/12.jpg">
+                <div class="card-block">
+                    <h1 class="card-title">Heart Tee</h1>
+                    <p class="card-text price">$10.00</p>
+                    <a href="#" data-name="Heart Tee" data-price="10.00" class="add-to-cart btn btn-primary"
+                        style="color: white; background-color: black;width: 80%;">Add to
+                        cart</a>
+                </div>
             </div>
         </div>
 
         <div class="row">
             <div class="card bottoms">
-                <img src="images/b10.jpg">
-                <h1>Smiley Shorts</h1>
-                <p class="price">$6.50</p>
-
-                <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="6.50">Add To Cart</a>
+                <img class="card-img-top" src="images/b1.jpg">
+                <div class="card-block">
+                    <h1 class="card-title">Space Grey Pants</h1>
+                    <p class="card-text price">$12.00</p>
+                    <a href="#" data-name="Space Grey Pants" data-price="12.00" class="add-to-cart btn btn-primary"
+                        style="color: white; background-color: black;width: 80%;">Add to
+                        cart</a>
+                </div>
             </div>
             <div class="card bottoms">
-                <img src="images/b11.jpg">
-                <h1>Butterfly Shorts</h1>
-                <p class="price">$6.50</p>
-
-                <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="6.50">Add To Cart</a>
+                <img class="card-img-top" src="images/b2.jpg">
+                <div class="card-block">
+                    <h1 class="card-title">Beige Shorts</h1>
+                    <p class="card-text price">$7.00</p>
+                    <a href="#" data-name="Beige Shorts" data-price="7.00" class="add-to-cart btn btn-primary"
+                        style="color: white; background-color: black;width: 80%;">Add to
+                        cart</a>
+                </div>
             </div>
             <div class="card bottoms">
-                <img src="images/b12.jpg">
-                <h1>Dino Shorts</h1>
-                <p class="price">$6.50</p>
+                <img class="card-img-top" src="images/b5.jpg">
+                <div class="card-block">
+                    <h1 class="card-title">North Shorts</h1>
+                    <p class="card-text price">$7.50</p>
+                    <a href="#" data-name="North Shorts" data-price="7.50" class="add-to-cart btn btn-primary"
+                        style="color: white; background-color: black;width: 80%;">Add to
+                        cart</a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card bottoms">
+                <img class="card-img-top" src="images/b3.jpg">
+                <div class="card-block">
+                    <h1 class="card-title">Checkered Pants</h1>
+                    <p class="card-text price">$11.00</p>
+                    <a href="#" data-name="Checkered Pants" data-price="11.00" class="add-to-cart btn btn-primary"
+                        style="color: white; background-color: black;width: 80%;">Add to
+                        cart</a>
+                </div>
+            </div>
+            <div class="card bottoms">
+                <img class="card-img-top" src="images/b4.jpg">
+                <div class="card-block">
+                    <h1 class="card-title">Basic Black Pants</h1>
+                    <p class="card-text price" class="price">$11.00</p>
+                    <a href="#" data-name="Basic Black Pants" data-price="11.00" class="add-to-cart btn btn-primary"
+                        style="color: white; background-color: black;width: 80%;">Add to
+                        cart</a>
+                </div>
+            </div>
+            <div class="card bottoms">
+                <img class="card-img-top" src="images/b6.jpg">
+                <div class="card-block">
+                    <h1 class="card-title">L.A Shorts</h1>
+                    <p class="card-text price">$6.90</p>
+                    <a href="#" data-name="L.A Shorts" data-price="6.90" class="add-to-cart btn btn-primary"
+                        style="color: white; background-color: black;width: 80%;">Add to
+                        cart</a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card bottoms">
+                <img class="card-img-top" src="images/b7.jpg">
+                <div class="card-block">
+                    <h1 class="card-title">Original Shorts</h1>
+                    <p class="card-text price">$6.50</p>
+                    <a href="#" data-name="Original Shorts" data-price="6.50" class="add-to-cart btn btn-primary"
+                        style="color: white; background-color: black;width: 80%;">Add to
+                        cart</a>
+                </div>
+            </div>
+            <div class="card bottoms">
+                <img class="card-img-top" src="images/b8.jpg">
+                <div class="card-block">
+                    <h1 class="card-title">Rainbow Shorts</h1>
+                    <p class="card-text price">$6.50</p>
+                    <a href="#" data-name="Rainbow Shorts" data-price="6.50" class="add-to-cart btn btn-primary"
+                        style="color: white; background-color: black;width: 80%;">Add to
+                        cart</a>
+                </div>
+            </div>
+            <div class="card bottoms">
+                <img class="card-img-top" src="images/b9.jpg">
+                <div class="card-block">
+                    <h1 class="card-title">Real Shorts</h1>
+                    <p class="card-text price">$6.50</p>
+                    <a href="#" data-name="Real Shorts" data-price="6.50" class="add-to-cart btn btn-primary"
+                        style="color: white; background-color: black;width: 80%;">Add to
+                        cart</a>
+                </div>
+            </div>
+        </div>
 
-                <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="6.50">Add To Cart</a>
+        <div class="row">
+            <div class="card bottoms">
+                <img class="card-img-top" src="images/b10.jpg">
+                <div class="card-block">
+                    <h1 class="card-title">Smiley Shorts</h1>
+                    <p class="card-text price">$6.50</p>
+                    <a href="#" data-name="Smiley Shorts" data-price="6.50" class="add-to-cart btn btn-primary"
+                        style="color: white; background-color: black;width: 80%;">Add to
+                        cart</a>
+                </div>
+            </div>
+            <div class="card bottoms">
+                <img class="card-img-top" src="images/b11.jpg">
+                <div class="card-block">
+                    <h1 class="card-title">Butterfly Shorts</h1>
+                    <p class="card-text price">$6.50</p>
+                    <a href="#" data-name="Butterfly Shorts" data-price="6.50" class="add-to-cart btn btn-primary"
+                        style="color: white; background-color: black;width: 80%;">Add to
+                        cart</a>
+                </div>
+            </div>
+            <div class="card bottoms">
+                <img class="card-img-top" src="images/b12.jpg">
+                <div class="card-block">
+                    <h1 class="card-title">Dino Shorts</h1>
+                    <p class="card-text price">$6.50</p>
+                    <a href="#" data-name="Dino Shorts" data-price="6.50" class="add-to-cart btn btn-primary"
+                        style="color: white; background-color: black;width: 80%;">Add to
+                        cart</a>
+                </div>
             </div>
         </div>
         <div class="row">
             <div class="card shoes">
-                <div class="product1">
-                    <img src="images/shoes2.jpg" class="prod-image">
-                    <h1>Pink Low Cut Shoes</h1>
-                    <p class="price">$22.00</p>
+                <img class="card-img-top" src="images/shoes2.jpg" class="prod-image">
+                <div class="card-block">
+                    <h1 class="card-title">Pink Low Cut Shoes</h1>
+                    <p class="card-text price">$22.00</p>
+                    <a href="#" data-name="Pink Low Cut Shoes" data-price="22.00" class="add-to-cart btn btn-primary"
+                        style="color: white; background-color: black;width: 80%;">Add to
+                        cart</a>
+                </div>
+            </div>
 
-                    <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="22.00">Add To Cart</a>
+            <div class="card shoes">
+                <img class="card-img-top" src="images/shoes3.jpg" class="cd-cart__image">
+                <div class="card-block">
+                    <h1 class="card-title">White Chunky Sneakers</h1>
+                    <p class="card-text price">$26.00</p>
+                    <a href="#" data-name="White Chunky Sneakers" data-price="26.00" class="add-to-cart btn btn-primary"
+                        style="color: white; background-color: black;width: 80%;">Add to
+                        cart</a>
                 </div>
             </div>
             <div class="card shoes">
-                <img src="images/shoes3.jpg" class="cd-cart__image">
-                <h1>White Chunky Sneakers</h1>
-                <p class="price">$26.00</p>
-
-                <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="26.00">Add To Cart</a>
-            </div>
-            <div class="card shoes">
-                <img src="images/shoes4.jpg">
-                <h1>B&W High Cut</h1>
-                <p class="price">$25.00</p>
-
-                <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="25.00">Add To Cart</a>
+                <img class="card-img-top" src="images/shoes4.jpg">
+                <div class="card-block">
+                    <h1 class="card-title">B&W High Cut</h1>
+                    <p class="card-text price">$25.00</p>
+                    <a href="#" data-name="B&W High Cut" data-price="25.00" class="add-to-cart btn btn-primary"
+                        style="color: white; background-color: black;width: 80%;">Add to
+                        cart</a>
+                </div>
             </div>
         </div>
+
         <div class="btn-container" style="height: auto;">
             <button class="topbtn">
                 <a href="#return">Back to Top</a>
             </button>
         </div>
+
     </div>
 
-    <!-- cart -->
-    <div class="cd-cart cd-cart--empty js-cd-cart" style="margin: 0;">
-        <a href="#0" class="cd-cart__trigger text-replace" style="margin: 0;">
-            <ul class="cd-cart__count" style="padding: 10px;">
-                <!-- cart items count -->
-                <li>0</li>
-                <li>0</li>
-            </ul> <!-- .cd-cart__count -->
-        </a>
-
-        <div class="cd-cart__content">
-            <div class=" cd-cart__layout" style="background-color: white;">
-                <header class="cd-cart__header">
-                    <h2 style="padding: 15px 0; font-size: larger;">Cart</h2>
-                    <span class="cd-cart__undo" style="padding: 15px 0; font-size: larger;">Item removed. <a
-                            href="#0">Undo</a></span>
-                </header>
-
-                <div class="cd-cart__body" style="height: auto; margin: 5px;">
-                    <ul style="height: auto; margin: 5px;">
-                        <!-- products added to the cart will be inserted here using JavaScript -->
-                    </ul>
+    <!-- Modal -->
+    <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document" style="height: auto;">
+            <div class="modal-content">
+                <div class="modal-header" style="padding:10px;">
+                    <h5 class="modal-title" id="exampleModalLabel" style="font-weight: bolder;">CART</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
+                <div class="modal-body" style="height: auto;">
+                    <table class="show-cart table" style="height: auto;">
 
-                <footer class="cd-cart__footer" style="height: auto;">
-                    <a href="checkout.html" class="cd-cart__checkout">
-                        <em>Checkout - $<span>0</span>
-                            <svg class="icon icon--sm" viewBox="0 0 24 24">
-                                <g fill="none" stroke="currentColor">
-                                    <line stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x1="3" y1="12"
-                                        x2="21" y2="12" />
-                                    <polyline stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                        points="15,6 21,12 15,18 " />
-                                </g>
-                            </svg>
-                        </em>
-                    </a>
-                </footer>
+                    </table>
+                    <div class="total-price">
+                        <div style="font-weight: bolder;">Total price: $<span class="total-cart"
+                                style="font-weight: bolder;"></span></div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal"
+                        style="background-color: #cf5a5a;">Close</button>
+                    <a href="checkout.html"><button type="button" class="btn btn-primary">Order now</button></a>
+                </div>
             </div>
-        </div> <!-- .cd-cart__content -->
-    </div> <!-- cd-cart -->
-    <script src="util.js"></script> <!-- util functions included in the CodyHouse framework -->
-    <script src="main.js"></script>
+        </div>
+    </div>
 
     <!----------------- footer ---------------->
     <section class="footer">
@@ -381,10 +491,8 @@
         <p>Made by gwen & sumayyah <br>Interactive Development Assignment 2, January 2022.</p>
     </section>
 
+    <script type="text/javascript" src="shopcart.js"></script>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script type='text/javascript' src="js/jquery.mycart/jquery.mycart.js"></script>
 
 
 </body>

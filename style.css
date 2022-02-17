@@ -37,7 +37,7 @@ body {
   color: aliceblue;
 }
 .menu i:hover {
-  color: rgb(192, 161, 161);
+  color: rgb(226, 211, 211);
 }
 .menu ul {
   text-align: right;
@@ -55,12 +55,6 @@ body {
 
 .menu ul li a {
   color: rgb(243, 237, 237);
-}
-
-.menu ul li a:hover {
-  text-decoration: none;
-  padding: 5px 10px;
-  transition: 0.45s ease-in-out;
 }
 
 #navbar {
@@ -316,9 +310,10 @@ body {
 }
 
 .price {
-  color: rgb(220, 170, 195);
+  color: rgb(118, 142, 179);
+  padding: 2px;
   font-size: 22px;
-  font-family: "Outfit", sans-serif;
+  text-align: center;
 }
 
 input {
@@ -348,6 +343,71 @@ input {
   opacity: 0.7;
 }
 
+.btn-container {
+  width: 100%;
+}
+.topbtn {
+  width: 40%;
+  background-color: rgb(241, 234, 234);
+  padding: 15px 8px;
+  border-radius: 5px;
+  margin: 10% 25% 25% 30%;
+  height: 50%;
+}
+.topbtn:hover {
+  background-color: rgb(223, 196, 196);
+  transition: 0.5s ease;
+}
+.topbtn a {
+  color: black;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+}
+.topbtn a:link,
+a:visited {
+  text-decoration: none;
+}
+
+#cart-counter {
+  position: fixed;
+  bottom: 1%;
+  right: 1%;
+}
+#cart-counter button {
+  margin: 5px;
+}
+#cartnav {
+  background-color: transparent;
+  border-color: transparent;
+}
+.total-price {
+  background-color: rgb(223, 196, 196);
+  margin: 0;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 15px;
+}
+.total-count {
+  font-weight: bolder;
+  color: black;
+}
+
+.delete-item {
+  height: auto;
+  margin: 0;
+  color: #000;
+  background-color: #cf5a5a;
+}
+.modal-footer button {
+  background-color: black;
+  margin: 0;
+}
+.modal-footer button:hover {
+  background-color: #d3b3b3;
+  color: white;
+}
 .footer {
   margin-top: 0px;
   width: 100%;
@@ -442,25 +502,36 @@ input {
 }
 
 /* 5 star rating */
+
 .star-rating {
-  height: 10%;
+  height: auto;
   width: 100%;
-  margin: 10px;
-  margin-bottom: 50px;
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  color: white;
 }
-.star-rating h3 {
+.star-rating a {
   width: 100%;
   text-align: center;
+  text-decoration: none;
   color: white;
+  font-family: "Outfit", sans-serif;
+}
+.star-rating h3,
+.star-rating p {
+  width: 100%;
+  text-align: center;
   font-family: "Outfit", sans-serif;
 }
 
 .rate {
   height: auto;
-  padding: 0px 50px;
-  margin: auto;
+  padding: 50px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 90%;
+  left: 38%;
 }
 .rate:not(:checked) > input {
   position: absolute;
@@ -492,6 +563,37 @@ input {
 .rate > label:hover ~ input:checked ~ label {
   color: #c59b08;
 }
+
+.comment-box {
+  height: auto;
+  width: 80%;
+  border-radius: 2px;
+  margin: 60px 100px;
+  padding: 10px 30px;
+  text-align: left;
+  background-color: rosybrown;
+  font-size: 12px;
+}
+::placeholder {
+  font-size: 12px;
+  text-align: left;
+}
+
+.comment-box h3 {
+  text-align: left;
+}
+.comment-form input,
+.comment-form textarea {
+  height: 10%;
+  width: 100%;
+  padding: 10px;
+  margin: 15px 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  background: #f0f0f0;
+}
+
 .mini-btn {
   width: 100%;
   height: auto;
