@@ -246,11 +246,10 @@ span.psw {
   align-self: center;
   position: absolute;
   margin-top: -100px;
-  margin-left: 300px;
 }
 
 .logreg a {
-  width: 25%;
+  width: 35%;
   text-align: center;
   padding: 10px 20px;
   font-family: "Outfit", sans-serif;
@@ -260,7 +259,7 @@ span.psw {
   margin-bottom: 100px;
   background-color: rgb(192, 161, 161);
   border-radius: 8px;
-  margin: 10px;
+  margin: auto;
 }
 
 .logreg a:hover {
@@ -272,8 +271,7 @@ span.psw {
   font-size: 13px;
 }
 @media (max-width: 800px) {
-  .logreg {
-    position: absolute;
-    margin-left: 150px;
+  .logreg a {
+    margin: auto;
   }
 }
