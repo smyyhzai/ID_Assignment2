@@ -31,8 +31,8 @@ Product page
 
 - Product page shows all products available✔️
 - Buttons to filter type of products✔️
-- Search bar to filter products
-- Add to cart allows users to add the products to their cart at the bottom right of the screen
+- Search bar to filter products s
+- Add to cart allows users to add the products to their cart at the bottom right of the screen ✔️
 
 Checkout page (from the cart)
 
@@ -63,11 +63,11 @@ Profile page
 ### Features Left to Implement
 
 - Responsiveness
-- Cart not showing correctly when products are added
+- Cart not showing correctly when products are added ✔️
 - Reward page show total stars and coupons collected
 - Reward page api
 - Profile page api
-- Checkout page (cart.html) lottie not centre
+- Checkout page (cart.html) lottie not centre ✔️
 
 ## Technologies Used
 
