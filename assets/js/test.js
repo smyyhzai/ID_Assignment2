@@ -108,7 +108,7 @@ $(document).ready(function () {
         let contactId = sessionStorage.getItem("id");
         let xMembershipType = $("#MembershipType").val();
         await updateForm(contactId, xName, xEmail, xPassword, memberPlan, xAddress, xPostalCode, xCard, xMembershipType);
-        location.href = "index.html";
+        location.href = "/assets/html/index.html";
       });
       //update profile unlocked
       $("#unlock-update").click(function(e){
@@ -144,7 +144,7 @@ $(document).ready(function () {
         let xMembershipType = sessionStorage.getItem("MembershipType");
         let contactId = sessionStorage.getItem("id");
         await updateForm(contactId, xName, xEmail, xPassword, xMemberPlan, xAddress, xPostalCode, xCard, xMembershipType);
-        location.href = "index.html";
+        location.href = "/assets/html/index.html";
       })
   //This Put is for changing membership plan to true
       async function updateForm(id,name, email, password,memberPlan, address,postalcode,card,MembershipType) {
@@ -218,23 +218,23 @@ $(document).ready(function () {
               sessionStorage.setItem("PostalCode",element.xPostalCode);
               sessionStorage.setItem("CreditCard",element.xCard);
               sessionStorage.setItem("MembershipType",element.xMembershipType);
-              location.href = "homeLogin.html";
+              location.href = "/assets/html/homeLogin.html";
             }
           }
           if (login == false) {
             alert("Invalid Username Or Password!");
-            location.href="logintest.html";
+            location.href="/assets/hrml/logintest.html";
           }
         
         });
         if (login == true) {;          
             document.getElementById("build").onclick = function() {
-                location.href='rewards.html';
+                location.href='/assets/html/rewards.html';
             }
         }
         else if (login == false) {;
            document.getElementById("build").onclick = function() {
-               location.href='product.html';
+               location.href='/assets/html/product.html';
            }
         }
       }
