@@ -269,9 +269,3 @@ span.psw {
   color: white;
   font-size: 13px;
 }
-@media (max-width: 800px) {
-  .logreg {
-    position: absolute;
-    margin-left: 150px;
-  }
-}
