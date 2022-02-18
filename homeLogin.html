@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;400;800&family=Special+Elite&display=swap"
+        rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/c75c699b1a.js" crossorigin="anonymous"></script>
+
+    <title>Assignment Website</title>
+
+</head>
+
+<body>
+    <header class="main-header">
+        <nav class="menu" id="navbar">
+            <ul id="menu">
+                <a href="homeLogin.html" class="logo">black tag.</a>
+                <li><a href="homeLogin.html"><i class="fas fa-home"></i></a></li>
+                <li><a href="productLogin.html"><i class="fas fa-tshirt"></i></a></li>
+                <li><a href="rewardsLogin.html"><i class="fas fa-star"></i></a></li>
+                <li><a href="profileLogin.html"><i class="fas fa-user"></i></a></li>
+            </ul>
+        </nav>
+        <div class="text-box">
+            <h1>black tag.</h1>
+            <p>Where casual street wear meets fashion</p>
+        </div>
+        <div class="btn-container">
+            <a href="#1" class="topbtn" id="shopnow"
+                style="color: white;background-color: black;border-color: white;border-radius:0;">EXPLORE MORE</a>
+        </div>
+
+    </header>
+
+
+    <h2 class="gallery-header" id="1">OUR PRODUCTS</h2>
+    <div class="cat-row">
+        <a href="product.html" class="category">
+            <div class="layer">
+                <h4>SWEATSHIRTS</h4>
+            </div>
+            <img src="images/sweats3.jpg">
+        </a>
+
+        <a href="product.html" class="category">
+            <div class="layer">
+                <h4>TOPS</h4>
+            </div>
+            <img src="images/top.png">
+        </a>
+
+        <a href="product.html" class="category">
+            <div class="layer">
+                <h4>BOTTOMS</h4>
+            </div>
+            <img src="images/shortss.jpg">
+        </a>
+        <a href="product.html" class="category">
+            <div class="layer">
+                <h4>SHOES</h4>
+            </div>
+            <img src="images/shoes.jpg">
+        </a>
+    </div>
+
+    <!----------------- gallery ---------------->
+    <div class="section2">
+
+        <h2 class="gallery-header">OUR GALLERY</h2>
+        <div class="w3-content w3-display-container">
+
+            <img class="mySlides" src="images/gallery0.jpg">
+            <img class="mySlides" src="images/gallery7.jfif">
+            <img class="mySlides" src="images/gallery8.jfif">
+            <img class="mySlides" src="images/gallery5.jfif">
+            <img class="mySlides" src="images/gallery3.jpg">
+            <img class="mySlides" src="images/banner.jpg">
+            <img class="mySlides" src="images/watch.png">
+            <img class="mySlides" src="images/img00.jfif">
+
+            <button class="w3-button w3-black w3-display-left" style="height:auto; margin-top:-100px;"
+                onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-black w3-display-right" style="height: auto; margin-top: -100px;"
+                onclick="plusDivs(1)">&#10095;</button>
+
+        </div>
+    </div>
+
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = x.length };
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+        }
+    </script>
+
+    <!----------------- footer ---------------->
+    <section class="footer">
+        <h4>All Rights Reserved©</h4>
+        <p>Made by gwen & sumayyah <br>Interactive Development Assignment 2, January 2022.</p>
+    </section>
+
+
+</body>
+
+</html>

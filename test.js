@@ -218,12 +218,12 @@ $(document).ready(function () {
               sessionStorage.setItem("PostalCode",element.xPostalCode);
               sessionStorage.setItem("CreditCard",element.xCard);
               sessionStorage.setItem("MembershipType",element.xMembershipType);
-              location.href = "index.html";
+              location.href = "homeLogin.html";
             }
           }
           if (login == false) {
             alert("Invalid Username Or Password!");
-            location.href="login.html";
+            location.href="logintest.html";
           }
         
         });
