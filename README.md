@@ -19,32 +19,34 @@ This is an e-commerce website that allows users to shop for clothings. They can 
 
 ## Features
 
-- Navigation bar that sticks to the top at every page✔️
+- Navigation bar that sticks to the top at every page
 - Responsive website and usable on mobile
 
 Home page
 
-- Slideshow of clothes✔️
-- Home page with categories of clothings available✔️
+- Slideshow of clothes
+- Home page with categories of clothings available
 
 Product page
 
-- Product page shows all products available✔️
-- Buttons to filter type of products✔️
-- Search bar to filter products s
-- Add to cart allows users to add the products to their cart at the bottom right of the screen ✔️
-- If user is not logged in, they will be redirected to login page when they checkout ✔️
-- If user is logged in, they can check out ✔️
+- Video banner 
+- Product page shows all products available
+- Buttons to filter type of products
+- A button at the bottom to allow users to go back to the top 
+- Add to cart allows users to add the products to their cart at the bottom right of the screen 
+- If user is not logged in, they will be redirected to login page when they checkout 
+- If user is logged in, they can check out 
 
 Checkout page (from the cart)
 
-- Billing address form and payment information ✔️
+- Billing address form and payment information 
 
 Checkout successful (from checkout page)
 
-- Allows users to checkout and leave a review of their shopping experience ✔️
-- Lottie animation used to show users that their order is successful (animation of tick)✔️
-- Buttons to let user choose to continue shopping, go back to home or collect rewards✔️
+- Allows users to checkout and leave a review of their shopping experience 
+- Lottie animation used to show users that their order is successful (animation of tick)
+- Form to leave feedback 
+- Buttons to let user choose to continue shopping, go back to home or collect rewards
 
 Rewards page
 
@@ -60,16 +62,15 @@ Profile page
 - Profile page allows users to log in or create their own account using API and restDB
 - Login and logout button will be shown accordingly
 
+Login page (from login button)
+- When submitted, lottie is used to show the page is loading
+
 ### Existing Features
 
 ### Features Left to Implement
 
-- Responsiveness
-- Cart not showing correctly when products are added ✔️
 - Reward page show total stars and coupons collected
 - Reward page api
-- Profile page api
-- Checkout page (cart.html) lottie not centre ✔️
 
 ## Technologies Used
 
@@ -93,35 +94,42 @@ Navigation bar
 
 - Scroll down the page and ensure that the navigation bar sticks to the top
 
+Home page
+- Explore more button should bring the user to the product categories
+- Clicking on the product categories should bring the user to the product page
+- Slideshow picture at the bottom of the screen should change when arrow is clicked
+
 Product page
 
 - Product page should show all products when first entered
 - Click "Sweatshirts" to filter products and show sweatshirts only etc.
 - Add a product to the cart and the cart should display the product and the correct price
 - Add more products and the total price should be calculated correctly
-- Checkout should lead you to the review page
+- Do not log in and check if checkout button leads to log in page
+- Log in and checkout should lead you to the billing and review page
 
 Reward page
 
-- Rewards should be issued once they reach a certain spending
-- Stars are deducted accordingly when used
+- Wheel should spin when spin button is clicked
+- A pop out should show the reward that the user has got
 
 Profile page
 
 - At the log in and sign up page, an error should popup if the fields are blank when submitted
 - Create an account and log in, users should be able to log in
-- Add items to your cart when logged in, users should be able to view the cart the next time they log in
-- Rewards should be saved as well
-- They should be able to view their order history
+- Log in/ register button should change to log out when the user is logged in
+- Visit other pages and return back to the profile page, the user should still be logged in.
+
 
 ## Credits
 
 ### Content
 
+- Products content is taken from shein
 ### Media
 
 - Images are taken from pinterest and shein
 
 ### Acknowledgements
 
-- I received inspiration for this project from mr peter hung.
+- I received inspiration for this project from w3schools and mr peter hung.
