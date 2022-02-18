@@ -33,6 +33,8 @@ Product page
 - Buttons to filter type of products✔️
 - Search bar to filter products s
 - Add to cart allows users to add the products to their cart at the bottom right of the screen ✔️
+- If user is not logged in, they will be redirected to login page when they checkout ✔️
+- If user is logged in, they can check out ✔️
 
 Checkout page (from the cart)
 
@@ -42,6 +44,7 @@ Checkout successful (from checkout page)
 
 - Allows users to checkout and leave a review of their shopping experience ✔️
 - Lottie animation used to show users that their order is successful (animation of tick)✔️
+- Buttons to let user choose to continue shopping, go back to home or collect rewards✔️
 
 Rewards page
 
@@ -55,8 +58,7 @@ Rewards page
 Profile page
 
 - Profile page allows users to log in or create their own account using API and restDB
-- Users' cart will be saved if they have an account
-- View all orders placed previously, as well as the status of their order
+- Login and logout button will be shown accordingly
 
 ### Existing Features
 
