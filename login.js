@@ -105,7 +105,7 @@ $(document).ready(function () {
         let contactId = sessionStorage.getItem("id");
         let xMembershipType = $("#MembershipType").val();
         await updateForm(contactId, xName, xEmail, xPassword, memberPlan, xAddress, xPostalCode, xCard, xMembershipType);
-        location.href = "home2.html";
+        location.href = "index.html";
       });
       //update profile unlocked
       $("#unlock-update").click(function(e){
@@ -141,7 +141,7 @@ $(document).ready(function () {
         let xMembershipType = sessionStorage.getItem("MembershipType");
         let contactId = sessionStorage.getItem("id");
         await updateForm(contactId, xName, xEmail, xPassword, xMemberPlan, xAddress, xPostalCode, xCard, xMembershipType);
-        location.href = "home2.html";
+        location.href = "index.html";
       })
   //This Put is for changing membership plan to true
       async function updateForm(id,name, email, password,memberPlan, address,postalcode,card,MembershipType) {
@@ -213,13 +213,18 @@ $(document).ready(function () {
               sessionStorage.setItem("Address",element.xAddress);
 
 
-              location.href = "home2.html";
+              location.href = "index.html";
             }
           }
           if (login == false) {
             alert("Invalid Username Or Password!");
-            location.href="login.html";
+            location.href="logintest.html";
           }
         });
       }
     })
+
+//logout alert
+function alertFunction2(){
+  alert("You have logged out succesfully.");
+}
