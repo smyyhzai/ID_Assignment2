@@ -17,7 +17,7 @@ body {
   background-size: cover;
   background-position: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-    url("street.gif");
+    url("images/street.gif");
 }
 
 .main-header img {
@@ -81,13 +81,12 @@ body {
   width: 50%;
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 52%;
   transform: translate(-50%, -50%);
   height: auto;
   background-color: black;
   border-style: solid;
   border-color: white;
-
   padding: 10px;
 }
 

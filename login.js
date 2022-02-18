@@ -71,22 +71,7 @@ $(document).ready(function () {
           $("#total-contacts").html(response.length);
         });
       }
-      // delete this before submit
-      $("#contact-list").on("click", ".update", function (e) {
-        e.preventDefault();
-        let xName = $(this).data("name");
-        let xEmail = $(this).data("email");
-        let xPassword = $(this).data("password");
-        let xMemberPlan = $(this).data("memberPlan");
-        let contactId = $(this).data("id");
   
-        $("#update-xName").val(xName);
-        $("#update-xEmail").val(xEmail);
-        $("#update-xPassword").val(xPassword);
-        $("#update-xMemberPlan").val(xMemberPlan);
-        $("#update-contact-id").val(contactId);
-        $("#update-contact-container").show();
-      })
       //login page
       $(".login").submit(function(e){
         e.preventDefault();
@@ -107,7 +92,7 @@ $(document).ready(function () {
         await updateForm(contactId, xName, xEmail, xPassword, memberPlan, xAddress, xPostalCode, xCard, xMembershipType);
         location.href = "index.html";
       });
-      //update profile unlocked
+
       $("#unlock-update").click(function(e){
         e.preventDefault();
         $("#xName").attr("disabled",false);
@@ -117,7 +102,7 @@ $(document).ready(function () {
         $("#xPostalCode").attr("disabled",false);
         $("#xCard").attr("disabled",false);
       })
-      //loading page will show your profile infor
+
       $("#update-form div").ready(function(e){
         const form = $("#update-form div")
         form.find("#xName").val(sessionStorage.getItem("Name"));
@@ -143,7 +128,7 @@ $(document).ready(function () {
         await updateForm(contactId, xName, xEmail, xPassword, xMemberPlan, xAddress, xPostalCode, xCard, xMembershipType);
         location.href = "index.html";
       })
-  //This Put is for changing membership plan to true
+  //change membership plan to true
       async function updateForm(id,name, email, password,memberPlan, address,postalcode,card,MembershipType) {
         var jsondata = { 
           "xName": name,

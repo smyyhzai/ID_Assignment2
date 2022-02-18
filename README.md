@@ -99,6 +99,7 @@ Home page
 Product page
 
 - Product page should show all products when first entered
+- When the page is resized, the products become 1 column
 - Click "Sweatshirts" to filter products and show sweatshirts only etc.
 - Back to top button should bring users back to the top of the page when clicked
 - Add a product to the cart and the cart should display the product and the correct price
