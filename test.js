@@ -1,6 +1,6 @@
 $(document).ready(function () {
     $('#loading').hide();
-      const APIKEY = "91106d4c1aa4d8af3203e28c331cea9d6e57a";
+      const APIKEY = "61d29385ccd0211b3208956e";
       getContacts();
       $("#update-contact-container").hide();
       $("#add-update-msg").hide();
@@ -15,15 +15,18 @@ $(document).ready(function () {
           "xPassword": password,
           "xMemberPlan": false,
           "xAddress": "Null",
+          "xCard": "Null",
+          "xPostalCode": "Null",
+          "xMembershipType": "Null"
         };
         let settings = {
           "async": true,
           "crossDomain": true,
-          "url": "https://assignment2-53e4.restdb.io/rest/login",
+          "url": "https://interectivedev-13c7.restdb.io/rest/contact",
           "method": "POST",
           "headers": {
             "content-type": "application/json",
-            "x-apikey": "91106d4c1aa4d8af3203e28c331cea9d6e57a",
+            "x-apikey": APIKEY,
             "cache-control": "no-cache"
           },
           "processData": false,
@@ -45,11 +48,11 @@ $(document).ready(function () {
         let settings = {
           "async": true,
           "crossDomain": true,
-          "url": "https://assignment2-53e4.restdb.io/rest/login",
+          "url": "https://interectivedev-13c7.restdb.io/rest/contact",
           "method": "GET",
           "headers": {
             "content-type": "application/json",
-            "x-apikey": "91106d4c1aa4d8af3203e28c331cea9d6e57a",
+            "x-apikey": APIKEY,
             "cache-control": "no-cache"
           },
         }
@@ -105,7 +108,7 @@ $(document).ready(function () {
         let contactId = sessionStorage.getItem("id");
         let xMembershipType = $("#MembershipType").val();
         await updateForm(contactId, xName, xEmail, xPassword, memberPlan, xAddress, xPostalCode, xCard, xMembershipType);
-        location.href = "/assets/html/index.html";
+        location.href = "index.html";
       });
       //update profile unlocked
       $("#unlock-update").click(function(e){
@@ -141,7 +144,7 @@ $(document).ready(function () {
         let xMembershipType = sessionStorage.getItem("MembershipType");
         let contactId = sessionStorage.getItem("id");
         await updateForm(contactId, xName, xEmail, xPassword, xMemberPlan, xAddress, xPostalCode, xCard, xMembershipType);
-        location.href = "/assets/html/index.html";
+        location.href = "index.html";
       })
   //This Put is for changing membership plan to true
       async function updateForm(id,name, email, password,memberPlan, address,postalcode,card,MembershipType) {
@@ -163,11 +166,11 @@ $(document).ready(function () {
         var settings = {
           "async": true,
           "crossDomain": true,
-          "url": "https://assignment2-53e4.restdb.io/rest/login/(objectID)${id}",
+          "url": `https://interectivedev-13c7.restdb.io/rest/contact/${id}`,
           "method": "PUT",
           "headers": {
             "content-type": "application/json",
-            "x-apikey": "91106d4c1aa4d8af3203e28c331cea9d6e57a",
+            "x-apikey": APIKEY,
             "cache-control": "no-cache"
           },
           "processData": false,
@@ -185,11 +188,11 @@ $(document).ready(function () {
         let settings = {
           "async": true,
           "crossDomain": true,
-          "url": "https://assignment2-53e4.restdb.io/rest/login",
+          "url": "https://interectivedev-13c7.restdb.io/rest/contact",
           "method": "GET",
           "headers": {
             "content-type": "application/json",
-            "x-apikey": "91106d4c1aa4d8af3203e28c331cea9d6e57a",
+            "x-apikey": APIKEY,
             "cache-control": "no-cache"
           },
           "beforeSend":showlottie()
@@ -210,21 +213,43 @@ $(document).ready(function () {
               sessionStorage.setItem("Name",element.xName);
               sessionStorage.setItem("Email",element.xEmail);
               sessionStorage.setItem("Password",element.xPassword);
+              sessionStorage.setItem("memberPlan",element.xMemberPlan);
               sessionStorage.setItem("Address",element.xAddress);
-
-
-              location.href = "/assets/html/index.html";
+              sessionStorage.setItem("PostalCode",element.xPostalCode);
+              sessionStorage.setItem("CreditCard",element.xCard);
+              sessionStorage.setItem("MembershipType",element.xMembershipType);
+              location.href = "homeLogin.html";
             }
           }
           if (login == false) {
             alert("Invalid Username Or Password!");
-            location.href="/assets/html/logintest.html";
+            location.href="logintest.html";
           }
+        
         });
+        if (login == true) {;          
+            document.getElementById("build").onclick = function() {
+                location.href='rewards.html';
+            }
+        }
+        else if (login == false) {;
+           document.getElementById("build").onclick = function() {
+               location.href='product.html';
+           }
+        }
       }
     })
+function login(login){
 
-//logout alert
-function alertFunction2(){
-  alert("You have logged out succesfully.");
+
+    if (login.value = true) {;          
+        document.getElementById("build").onclick = function() {
+            location.href='index.html';
+        }
+    }
+    else if (login.value = false) {;
+       document.getElementById("build").onclick = function() {
+           location.href='product.html';
+       }
+    }
 }

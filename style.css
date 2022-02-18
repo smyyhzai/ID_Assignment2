@@ -17,11 +17,7 @@ body {
   background-size: cover;
   background-position: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-<<<<<<< HEAD:css/style.css
-    url("images/street.gif");
-=======
-    url("/street.gif");
->>>>>>> 9a76f2786c3c2a3fabde4db17fefd04f2bfd22a4:assets/css/style.css
+    url("street.gif");
 }
 
 .main-header img {

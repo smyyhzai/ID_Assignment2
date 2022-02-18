@@ -7,15 +7,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-<<<<<<< HEAD:rewards.html
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
 
-    <script type="text/javascript" src="js/Winwheel.js"></script>
-=======
-    <link rel="stylesheet" href="/assets/css/style.css">
-
-    <script type="text/javascript" src="/assets/js/Winwheel.js"></script>
->>>>>>> 9a76f2786c3c2a3fabde4db17fefd04f2bfd22a4:assets/html/rewards.html
+    <script type="text/javascript" src="Winwheel.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
 
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
@@ -36,11 +30,11 @@
     <header class="sub-header">
         <nav class="menu" id="navbar">
             <ul id="menu">
-                <a href="/assets/html/index.html" class="logo">black tag.</a>
-                <li><a href="/assets/html/index.html"><i class="fas fa-home"></i></a></li>
-                <li><a href="/assets/html/product.html"><i class="fas fa-tshirt"></i></a></li>
-                <li><a href="/assets/html/rewards.html"><i class="fas fa-star"></i></a></li>
-                <li><a href="/assets/html/profile.html"><i class="fas fa-user"></i></a></li>
+                <a href="homeLogin.html" class="logo">black tag.</a>
+                <li><a href="homeLogin.html"><i class="fas fa-home"></i></a></li>
+                <li><a href="productLogin.html"><i class="fas fa-tshirt"></i></a></li>
+                <li><a href="rewardsLogin.html"><i class="fas fa-star"></i></a></li>
+                <li><a href="profileLogin.html"><i class="fas fa-user"></i></a></li>
             </ul>
         </nav>
         <div class="cart-header">Rewards</div>
@@ -79,7 +73,7 @@
                             </tr>
                         </table>
                         <br />
-                        <img id="spin_button" src="/spin_off.png" alt="Spin" onClick="startSpin();" />
+                        <img id="spin_button" src="spin_off.png" alt="Spin" onClick="startSpin();" />
                         <br /><br />
                         &nbsp;&nbsp;<a href="#" onClick="resetWheel(); return false;">Play
                             Again</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(reset)
@@ -148,7 +142,7 @@
         });
 
         // Loads the tick audio sound in to an audio object.
-        let audio = new Audio('/tick.mp3');
+        let audio = new Audio('tick.mp3');
 
         // This function is called when the sound is to be played.
         function playSound() {
@@ -192,7 +186,7 @@
                 wheelPower = powerLevel;
 
                 // Light up the spin button by changing it's source image and adding a clickable class to it.
-                document.getElementById('spin_button').src = "/spin_on.png";
+                document.getElementById('spin_button').src = "spin_on.png";
                 document.getElementById('spin_button').className = "clickable";
             }
         }
@@ -214,7 +208,7 @@
                 }
 
                 // Disable the spin button so can't click again while wheel is spinning.
-                document.getElementById('spin_button').src = "/spin_off.png";
+                document.getElementById('spin_button').src = "spin_off.png";
                 document.getElementById('spin_button').className = "";
 
                 // Begin the spin animation by calling startAnimation on the wheel object.
