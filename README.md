@@ -19,32 +19,33 @@ This is an e-commerce website that allows users to shop for clothings. They can 
 
 ## Features
 
-- Navigation bar that sticks to the top at every page✔️
+- Navigation bar that sticks to the top at every page
 - Responsive website and usable on mobile
 
 Home page
 
-- Slideshow of clothes✔️
-- Home page with categories of clothings available✔️
+- Slideshow of clothes
+- Home page with categories of clothings available
 
 Product page
 
-- Product page shows all products available✔️
-- Buttons to filter type of products✔️
-- Search bar to filter products s
-- Add to cart allows users to add the products to their cart at the bottom right of the screen ✔️
-- If user is not logged in, they will be redirected to login page when they checkout ✔️
-- If user is logged in, they can check out ✔️
+- Product page shows all products available
+- Buttons to filter type of products
+- Add to cart allows users to add the products to their cart at the bottom right of the screen 
+- If user is not logged in, they will be redirected to login page when they checkout 
+- If user is logged in, they can check out 
 
 Checkout page (from the cart)
 
-- Billing address form and payment information ✔️
+- Billing address form and payment information 
+- If user is not logged in, they will be redirected to login page
+- If user is logged in, they will be able to checkout and directed to the reviews page
 
 Checkout successful (from checkout page)
 
-- Allows users to checkout and leave a review of their shopping experience ✔️
-- Lottie animation used to show users that their order is successful (animation of tick)✔️
-- Buttons to let user choose to continue shopping, go back to home or collect rewards✔️
+- Allows users to checkout and leave a review of their shopping experience 
+- Lottie animation used to show users that their order is successful (animation of tick)
+- Buttons to let user choose to continue shopping, go back to home or collect rewards
 
 Rewards page
 
@@ -53,23 +54,19 @@ Rewards page
 - 5 stars can be exchanged for either a spin on the wheel or $5 off the next purchase
 - Spin the wheel will be in the reward page
 - Spin the wheel rewards will include no reward, 5% discount, 10% discount, 20% discount, $2 off next purchase
-- Coupon will be added into the list of rewards
 
 Profile page
 
 - Profile page allows users to log in or create their own account using API and restDB
 - Login and logout button will be shown accordingly
+- If user is logged in, login/register button would be changed to log out
 
 ### Existing Features
 
 ### Features Left to Implement
 
-- Responsiveness
-- Cart not showing correctly when products are added ✔️
 - Reward page show total stars and coupons collected
 - Reward page api
-- Profile page api
-- Checkout page (cart.html) lottie not centre ✔️
 
 ## Technologies Used
 
@@ -93,35 +90,54 @@ Navigation bar
 
 - Scroll down the page and ensure that the navigation bar sticks to the top
 
+Home page
+- Explore more button would scroll down to the product categories
+- Clicking the categories would bring users to the product page
+- Gallery pictures should change when the next arrow is clicked
+- Image should return to previous image when back arrow is clicked
+
 Product page
 
 - Product page should show all products when first entered
 - Click "Sweatshirts" to filter products and show sweatshirts only etc.
+- Back to top button should bring users back to the top of the page when clicked
 - Add a product to the cart and the cart should display the product and the correct price
 - Add more products and the total price should be calculated correctly
-- Checkout should lead you to the review page
+- Checkout should lead you to the review page if the user is logged in
+- If user is not logged in, user will be redirected to the login page to login/register
 
 Reward page
 
-- Rewards should be issued once they reach a certain spending
-- Stars are deducted accordingly when used
+- Wheel should spin when button is clicked
+- When the wheel is spinning, the spin button is disabled
+- A popup should show the user the reward they have gotten after the wheel stops spinning
 
 Profile page
 
 - At the log in and sign up page, an error should popup if the fields are blank when submitted
 - Create an account and log in, users should be able to log in
-- Add items to your cart when logged in, users should be able to view the cart the next time they log in
-- Rewards should be saved as well
-- They should be able to view their order history
+- When users are not logged in, they will see a login/register button
+- When users are logged in, they will see a logout button
+- Users will stay logged in after visiting other pages
+
+Login page (from login button)
+- Users wont be able to submit if the username and password fields are not filled
+- A loading lottie will be shown when the user submit the form
+- A error pop up will show when username or password is invalid
+
+Register page (from login page)
+- A contact added successfully popup will show when users have submitted their form
+## Contributions
+- The whole assignment was did together as a pair
 
 ## Credits
 
 ### Content
-
+- Products are sourced from shein
 ### Media
 
 - Images are taken from pinterest and shein
 
 ### Acknowledgements
 
-- I received inspiration for this project from mr peter hung.
+- I received inspiration for this project from w3schools mr peter hung.
